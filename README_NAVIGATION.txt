@@ -1,15 +1,14 @@
-BƯỚC TIẾP: TẠO MIỀN DẪN ĐƯỜNG TAM GIÁC HÓA
+DỰNG MIỀN DẪN ĐƯỜNG PHẲNG VÀ TAM GIÁC HÓA
 
-Giải nén nội dung vào C:\DroneDemo\drone_gazebo_demo.
-File tools/build_navigation_surface.py phải nằm trực tiếp trong tools.
-Ubuntu 2, giữ môi trường (.venv), chạy:
+Nhóm xây dựng miền dẫn đường phẳng từ các vùng trống của mặt cắt thành phố.
+Quy trình thực hiện trong Ubuntu 2:
 
 cd /mnt/c/DroneDemo/drone_gazebo_demo
-python tools/build_navigation_surface.py --height 2
+.venv/bin/python tools/build_navigation_surface.py --height 2
 
-Không mở Gazebo, không cài thêm thư viện (dùng NumPy và Matplotlib đã có).
+Công cụ xử lý ngoại tuyến, sử dụng NumPy và Matplotlib của môi trường phân tích.
 File city.glb được tìm tại data/input trước, rồi assets. Có thể chỉ định rõ:
-python tools/build_navigation_surface.py --height 2 --city data/input/city.glb
+.venv/bin/python tools/build_navigation_surface.py --height 2 --city assets/city.glb
 
 KẾT QUẢ
 generated/navigation_y2p00.png: vùng cản và lưới nhìn từ trên xuống.
@@ -20,7 +19,7 @@ generated/navigation_y2p00_grid.npz: grid và nhãn liên thông để chọn đ
 Mở thư mục kết quả:
 explorer.exe "$(wslpath -w generated)"
 
-Kết quả tham chiếu trên asset đã gửi:
+Kết quả khảo sát trên mô hình thành phố:
 - 4 thành phần miền trống; chọn thành phần lớn nhất gồm 7.678 ô.
 - 8.236 đỉnh, 15.356 tam giác, 23.597 cạnh; 1.126 cạnh biên.
 - Không cạnh phi đa tạp, không đỉnh biên có bậc sai, không quạt mặt rời tại đỉnh,

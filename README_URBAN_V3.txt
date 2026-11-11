@@ -1,30 +1,28 @@
-BAY THẤP VÀ XÉT VÙNG CẢN - BẢN V3
+THỬ NGHIỆM ĐÔ THỊ V3 TRÊN MIỀN BAY PHẲNG
 
-CÁCH CHẠY (KHÔNG CÀI LẠI)
+QUY TRÌNH CHẠY THỬ NGHIỆM
 1. Ctrl+C ở terminal đang chạy Gazebo, chờ Gazebo đóng.
-2. Giải nén nội dung bản vá vào C:\DroneDemo\drone_gazebo_demo.
-   Chấp nhận ghi đè file trong src. Các file src/*.py phải nằm trực tiếp trong
-   thư mục src của dự án, không lồng thêm src/src.
-3. Trong Ubuntu:
+2. Kiểm tra môi trường Ubuntu 24.04 và các phụ thuộc theo README.md.
+3. Trong Ubuntu 1:
    cd /mnt/c/DroneDemo/drone_gazebo_demo
    bash scripts/run_urban.sh
 4. Xem tuyến CAM đi vòng; đoạn ĐỎ là đường thẳng bị chặn trong mô hình vùng cản.
    Drone giữ cao độ 9 thay vì 28,54, chạy một chặng có 6 waypoint.
-   Vẫn hiện [Drone V2] vì tái sử dụng bộ điều khiển V2 đã chạy trên máy bạn.
+   Nhóm tái sử dụng bộ điều khiển V2; thông báo chạy mang tiền tố [Drone V2].
    Dòng [Urban V3] xác nhận tuyến mới đã được tạo.
 5. Chờ khoảng một phút MÔ PHỎNG hoặc lâu hơn theo hiệu năng máy, tới dòng:
    [Drone V2] Route complete; holding final position.
-6. Ở terminal Ubuntu thứ hai:
+6. Trong Ubuntu 2:
    cd /mnt/c/DroneDemo/drone_gazebo_demo
-   python3 tools/analyze_telemetry.py
-   python3 tools/check_urban_flight.py
-   Gửi kết quả hai lệnh để kiểm tra sai lệch và vùng cản trên dữ liệu đo.
+   .venv/bin/python tools/analyze_telemetry.py
+   .venv/bin/python tools/check_urban_flight.py
+   Hai công cụ đánh giá sai lệch bám tuyến và vùng cản từ dữ liệu đo.
 
 Script tự lưu bản sao CSV cũ thành generated/physics_telemetry_before_urban_<thời gian>.csv
 trước khi bắt đầu mô phỏng mới. Không mở hai Gazebo cùng lúc.
 Nếu lỗi render: bash scripts/run_urban.sh --software
 Muốn quay về bản cao độ cũ: đóng phiên hiện tại, chạy bash scripts/run.sh physics.
-Muốn chạy lại hồi quy thuật toán: python3 check.py.
+Hồi quy thuật toán trong Ubuntu 2: .venv/bin/python check.py.
 
 PHƯƠNG PHÁP
 - Giữ bản đồ chuẩn hóa đã có (không phải tọa độ đo đạc theo mét).
@@ -58,8 +56,9 @@ chuyển động thật giữa hai mẫu đều không va chạm. Không có v�
 - Tuyến đô thị nằm trên hành lang; đường trực tiếp bị cản; các đoạn kế hoạch
   không cắt hộp công trình đã mở rộng.
 - Tích phân số khối điểm với bộ điều khiển V2; xem offline_urban_validation.json.
-- Chạy chuẩn bị world từ bản vá ghép vào gói gốc; syntax Python/shell.
-Chưa chạy Gazebo V3 trong môi trường tạo gói. Cần kết quả trên máy bạn để xác nhận.
+- Kiểm tra tạo world và cú pháp Python/shell.
+Kết quả tích phân ngoại tuyến được lưu trong offline_urban_validation.json.
+Các chỉ số của từng lượt Gazebo được tính từ telemetry của lượt đó.
 
 KHÁC BIỆT VỚI MỤC TIÊU NGHIÊN CỨU CUỐI
 Chưa áp dụng Funnel Tree lên toàn bộ vỏ công trình 301.490 tam giác; bản đồ

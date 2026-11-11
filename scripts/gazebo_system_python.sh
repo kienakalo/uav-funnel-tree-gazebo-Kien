@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Gazebo embeds the Ubuntu Python runtime and needs apt-installed gz bindings.
-# Keep the user's active venv in their terminal; isolate only this subprocess.
+# Isolate the Gazebo subprocess so it can import the system gz bindings.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 unset VIRTUAL_ENV PYTHONHOME

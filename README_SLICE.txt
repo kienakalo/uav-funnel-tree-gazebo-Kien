@@ -1,13 +1,13 @@
 TRÍCH MẶT CẮT THÀNH PHỐ TẠI Y = 2,0
 
-Giải nén vào C:\DroneDemo\drone_gazebo_demo.
-Ở Ubuntu 2, giữ môi trường (.venv), chạy:
+Nhóm trích mặt cắt tại cao độ Y = 2 trong hệ tọa độ mô hình gốc.
+Quy trình thực hiện trong Ubuntu 2:
 cd /mnt/c/DroneDemo/drone_gazebo_demo
-python tools/build_flight_slice.py --height 2
+.venv/bin/python tools/build_flight_slice.py --height 2
 
 Script tìm data/input/city.glb trước, rồi assets/city.glb.
 Để chỉ định rõ file:
-python tools/build_flight_slice.py --height 2 --city data/input/city.glb
+.venv/bin/python tools/build_flight_slice.py --height 2 --city assets/city.glb
 
 Kết quả mới trong generated:
 - flight_slice_y2p00.png: mặt cắt nhìn theo mặt phẳng X/Z.
@@ -21,7 +21,7 @@ explorer.exe "$(wslpath -w generated)"
 3.571 cạnh không trùng, 120 component, 76 component dạng chu trình bậc 2 và
 44 component hở hoặc có nhánh. Kết quả tham chiếu có sẵn trong reference/.
 Script được thử với tam giác cắt biết trước, tiếp xúc tại đỉnh và các đồ thị
-đường bao kín/hở đơn giản, đồng thời chạy trên toàn bộ asset đã gửi.
+đường bao kín/hở đơn giản, đồng thời chạy trên toàn bộ mô hình thành phố.
 
 MÀU SẮC
 Xanh: component có tất cả đỉnh bậc 2, ứng viên đường bao kín.
@@ -41,4 +41,4 @@ GIỚI HẠN
 - Không thay route/world Gazebo cũ và không sửa file bản đồ gốc.
 
 Phụ thuộc: NumPy và Matplotlib trong môi trường phân tích đang dùng.
-Nếu thiếu Matplotlib, dùng python -m pip install matplotlib trong (.venv).
+Các thư viện phân tích được khai báo trong requirements-demo.txt.

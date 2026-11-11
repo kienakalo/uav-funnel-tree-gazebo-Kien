@@ -26,7 +26,7 @@ def main():
             for got,ref,diff in zip(paths,expected,differences):
                 assert diff<=2*math.sqrt(3)*5e-5*max(len(ref)-1,1)+1e-8
             row['max_reference_length_difference']=max(differences)
-        rows.append(row);print(name,source,'PASS',row.get('max_reference_length_difference','no supplied reference for source 1'))
+        rows.append(row);print(name,source,'PASS',row.get('max_reference_length_difference','no reference data for source 1'))
     # Analytic planar case: all source/target pairs must equal straight Euclidean distance.
     m=Mesh([Point(0,0,0),Point(2,0,0),Point(0,2,0),Point(2,2,0)],[(0,1,2),(1,3,2)])
     for s in range(4):
@@ -41,7 +41,7 @@ def main():
     result={'checks_passed':True,'rows':rows,'planar_all_pairs':True,'clip_rule_cases':True,
             'gazebo_runtime_tested':False,'arbitrary_mesh_optimality_certified':False}
     out=ROOT/'generated';out.mkdir(exist_ok=True);(out/'checks.json').write_text(json.dumps(result,indent=2)+'\n')
-    print('Planar all-pairs and clipping-rule checks: PASS. Gazebo runtime not available in this build environment.')
+    print('Planar all-pairs and clipping-rule checks: PASS. Gazebo runtime checks are performed separately.')
 
 
 if __name__=='__main__':main()

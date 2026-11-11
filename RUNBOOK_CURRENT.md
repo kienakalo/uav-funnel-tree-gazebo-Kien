@@ -18,7 +18,9 @@ GPU dùng `GALLIUM_DRIVER=d3d12` trên WSLg. CPU dùng `llvmpipe` và ép softwa
 rendering. Cả hai có thể thêm `--show-surface`. Các lệnh kiểm tra số liệu
 trong Ubuntu 2 dùng chung cho hai chế độ.
 
-Quy trình này dành cho môi trường Ubuntu/WSL đã cài trên máy hiện tại. Không cần kích hoạt `.venv`: khi cần thư viện của môi trường đó, gọi trực tiếp `.venv/bin/python`.
+Nhóm sử dụng Ubuntu 24.04/WSL và Gazebo Harmonic cho các thử nghiệm. Các công
+cụ phân tích gọi trực tiếp `.venv/bin/python`; plugin Gazebo sử dụng Python
+hệ thống thông qua script thiết lập môi trường riêng.
 
 - **Ubuntu 1:** terminal mở Gazebo. Nhấn `Ctrl+C` ở đây để kết thúc phiên mô phỏng.
 - **Ubuntu 2:** terminal chạy kiểm tra và xuất kết quả.

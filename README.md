@@ -1,7 +1,8 @@
 # UAV giao hàng trên bề mặt 3D bằng Funnel Tree
 
-Dự án Python lập tuyến trên bề mặt đa diện và mô phỏng một UAV bám tuyến
-trong Gazebo Harmonic. Quy trình hiện tại đọc mô hình thành phố `city.glb`,
+Trong dự án này, nhóm triển khai thuật toán Funnel Tree bằng Python để lập
+tuyến trên bề mặt đa diện và mô phỏng một UAV bám tuyến trong Gazebo Harmonic.
+Quy trình đọc mô hình thành phố `city.glb`,
 dựng bề mặt dẫn đường 3D phía trên địa hình và công trình, chạy Funnel Tree,
 đối chiếu độ dài với bộ giải MMP độc lập, rồi mô phỏng tiếp cận điểm giao hàng.
 
@@ -116,8 +117,8 @@ Lệnh gốc `run_funnel_physics.sh` dùng driver mặc định của hệ thố
 `--software` của lệnh gốc bật render CPU. Hai script mới chọn rõ backend đồ
 họa cho cùng pipeline lập tuyến và mô phỏng vật lý.
 
-Bạn cùng nhóm có thể sửa hai script trong `scripts/`, hoặc chọn ca khác
-bằng biến môi trường. Ví dụ trong **Ubuntu 1**:
+Nhóm sử dụng hai script trong `scripts/` để quản lý cấu hình render. Ca mô
+phỏng được chọn bằng biến môi trường. Ví dụ trong **Ubuntu 1**:
 
 ```bash
 FUNNEL_DEMO_CASE=original bash scripts/run_surface_cpu.sh
@@ -187,8 +188,9 @@ cần lập lại kế hoạch tương ứng. Khi thay đổi cả pipeline mi�
 | `data/input`, `data/expected` | Năm mesh mẫu và dữ liệu đối chiếu |
 | `generated/` | Bộ dữ liệu đã kiểm tra và các kết quả sinh ra |
 
-`RUNBOOK_CURRENT.md` là hướng dẫn vận hành chi tiết. Các README dạng `.txt`
-mô tả những giai đoạn thử nghiệm trước.
+`RUNBOOK_CURRENT.md` là hướng dẫn vận hành chi tiết. Nhóm lưu quy trình khảo
+sát mặt cắt, dựng miền dẫn đường phẳng và thử nghiệm đô thị V3 trong các
+README dạng `.txt` để đối chiếu giữa các giai đoạn.
 
 ## Phạm vi kết quả
 

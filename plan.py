@@ -1,4 +1,4 @@
-"""Run experimental Funnel Tree on the supplied geom meshes."""
+"""Run experimental Funnel Tree on the bundled geom meshes."""
 import argparse,json,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
