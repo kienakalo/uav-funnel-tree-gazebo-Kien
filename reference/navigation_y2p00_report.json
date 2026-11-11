@@ -1,0 +1,52 @@
+{
+  "height": 2.0,
+  "horizontal_clearance": 1.0,
+  "vertical_clearance": 0.2,
+  "cell_size": 0.5,
+  "grid_shape": [
+    112,
+    99
+  ],
+  "upper_triangles": 47506,
+  "free_components": 4,
+  "component_cell_counts": [
+    7678,
+    4,
+    2,
+    1
+  ],
+  "largest_component_cells": 7678,
+  "conservatively_removed_point_contact_cells": 0,
+  "all_retained_cells_clear_of_inflated_boxes": true,
+  "mesh": {
+    "vertices": 8236,
+    "triangles": 15356,
+    "edges": 23597,
+    "boundary_edges": 1126,
+    "nonmanifold_edges": 0,
+    "bad_boundary_vertices": 0,
+    "disconnected_vertex_fans": 0,
+    "degenerate_triangles": 0,
+    "area": 1919.5
+  },
+  "coordinates": "original GLB scene: X/Y/Z with Y up; unverified model units",
+  "original_scene_bounds": [
+    [
+      0.0,
+      5.080794305991904e-15,
+      -48.729936642824214
+    ],
+    [
+      55.51212909311744,
+      5.145146264153488,
+      1.5563969662159178e-12
+    ]
+  ],
+  "grid_origin_xz": [
+    0.0,
+    -49.0
+  ],
+  "sha256": "a3b642e8a4674a278975981247d97b836bda60977ce609bf3044b1b7839f4f22",
+  "method": "upper-triangle X/Z AABB columns expanded in X/Z; raster free whole cells; largest edge-connected component",
+  "status": "static conservative surface only; no route or city-global optimum certified"
+}

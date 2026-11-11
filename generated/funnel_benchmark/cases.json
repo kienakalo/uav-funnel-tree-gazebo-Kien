@@ -1,0 +1,111 @@
+{
+  "signature": "9be41981e0fadad77a277bd65f22e0ba0d44b9b35be6ac4d8692e6c4ed8f887e",
+  "cases": [
+    {
+      "id": "original",
+      "description": "Original validated START-GOAL pair",
+      "source": 8236,
+      "goal": 8237,
+      "start_xyz": [
+        5.15,
+        2.0,
+        -4.85
+      ],
+      "goal_xyz": [
+        50.15,
+        2.0,
+        -44.85
+      ]
+    },
+    {
+      "id": "short_open",
+      "description": "Short route in an open area",
+      "source": 8238,
+      "goal": 8239,
+      "requested_xz": [
+        [
+          5.0,
+          -5.0
+        ],
+        [
+          8.0,
+          -8.0
+        ]
+      ],
+      "start_xyz": [
+        5.216666666666667,
+        2.0,
+        -4.95
+      ],
+      "goal_xyz": [
+        7.833333333333333,
+        2.0,
+        -8.166666666666666
+      ]
+    },
+    {
+      "id": "cross_city",
+      "description": "Detour across the central obstacle region",
+      "source": 8240,
+      "goal": 8241,
+      "requested_xz": [
+        [
+          8.0,
+          -20.0
+        ],
+        [
+          45.0,
+          -20.0
+        ]
+      ],
+      "start_xyz": [
+        8.166666666666666,
+        2.0,
+        -19.833333333333332
+      ],
+      "goal_xyz": [
+        44.833333333333336,
+        2.0,
+        -20.166666666666668
+      ]
+    },
+    {
+      "id": "narrow_corridor",
+      "description": "Short route along a narrow grid corridor",
+      "source": 8242,
+      "goal": 8243,
+      "requested_xz": [
+        [
+          27.25,
+          -27.75
+        ],
+        [
+          29.25,
+          -27.75
+        ]
+      ],
+      "corridor_selection": {
+        "cross_section_free_cells": 1,
+        "cross_section_width_model_units": 0.5,
+        "grid_cell": [
+          56,
+          42
+        ],
+        "along_axis": "X",
+        "scope": "local grid cross-section; not UAV clearance certification"
+      },
+      "start_xyz": [
+        27.333333333333332,
+        2.0,
+        -27.666666666666668
+      ],
+      "goal_xyz": [
+        29.166666666666668,
+        2.0,
+        -27.833333333333332
+      ]
+    }
+  ],
+  "vertices": 8244,
+  "faces": 15372
+}

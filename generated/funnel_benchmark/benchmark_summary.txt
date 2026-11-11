@@ -1,0 +1,11 @@
+FUNNEL PLANNING REGRESSION TESTS
+
+original: PASS | length=68.088655 | mesh-edge reference=72.752955
+short_open: PASS | length=4.146551 | mesh-edge reference=4.488816
+cross_city: PASS | length=51.896852 | mesh-edge reference=64.301705
+narrow_corridor: PASS | length=1.840894 | mesh-edge reference=2.108380
+
+Complete: True
+All cases passed: True
+Scope: candidate route geometry only; no global optimality or new Gazebo flight certification.
+Timing uses shared cache; do not compare case times as uncached planner performance.

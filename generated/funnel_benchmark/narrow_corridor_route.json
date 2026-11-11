@@ -1,0 +1,88 @@
+{
+  "signature": "9be41981e0fadad77a277bd65f22e0ba0d44b9b35be6ac4d8692e6c4ed8f887e",
+  "points": [
+    [
+      27.333333333333332,
+      2.0,
+      -27.666666666666668
+    ],
+    [
+      27.5,
+      2.0,
+      -27.681818181818183
+    ],
+    [
+      27.7,
+      2.0,
+      -27.7
+    ],
+    [
+      28.0,
+      2.0,
+      -27.727272727272727
+    ],
+    [
+      28.25,
+      2.0,
+      -27.75
+    ],
+    [
+      28.5,
+      2.0,
+      -27.772727272727273
+    ],
+    [
+      28.8,
+      2.0,
+      -27.799999999999997
+    ],
+    [
+      29.0,
+      2.0,
+      -27.818181818181817
+    ],
+    [
+      29.166666666666668,
+      2.0,
+      -27.833333333333332
+    ]
+  ],
+  "case": {
+    "id": "narrow_corridor",
+    "description": "Short route along a narrow grid corridor",
+    "source": 8242,
+    "goal": 8243,
+    "requested_xz": [
+      [
+        27.25,
+        -27.75
+      ],
+      [
+        29.25,
+        -27.75
+      ]
+    ],
+    "corridor_selection": {
+      "cross_section_free_cells": 1,
+      "cross_section_width_model_units": 0.5,
+      "grid_cell": [
+        56,
+        42
+      ],
+      "along_axis": "X",
+      "scope": "local grid cross-section; not UAV clearance certification"
+    },
+    "start_xyz": [
+      27.333333333333332,
+      2.0,
+      -27.666666666666668
+    ],
+    "goal_xyz": [
+      29.166666666666668,
+      2.0,
+      -27.833333333333332
+    ]
+  },
+  "length": 1.8408935028645457,
+  "optimality_certified": false
+}

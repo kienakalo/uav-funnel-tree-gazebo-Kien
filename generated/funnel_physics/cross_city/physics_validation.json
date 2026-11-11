@@ -1,0 +1,23 @@
+{
+  "case": "cross_city",
+  "checks_passed": true,
+  "last_phase": "complete",
+  "samples": 1875,
+  "telemetry_sha256": "0bdb2c52311350921ef8909f038040a1fe4deb0ac1cac7d6a94fc85d7e47b109",
+  "max_tracking_error": 0.002542982029566167,
+  "moving_rmse": 0.0008727831308585917,
+  "final_goal_error": 2.1426390769800443e-07,
+  "max_altitude_deviation": 0.0,
+  "max_measured_speed": 4.999769279704902,
+  "dwell_segments_observed": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "obstacle_intersecting_sample_segments": [],
+  "route_sha256": "d2c2a3731d1ec452d7d66fa5b7fdbaace2c62ea39b4e9a63bd83ec6294602e8a",
+  "scope": "measured centreline and straight segments between CSV samples vs inflated obstacle columns; not a continuous-time contact proof",
+  "rotor_or_autopilot_simulation": false
+}

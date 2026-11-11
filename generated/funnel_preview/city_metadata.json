@@ -1,0 +1,46 @@
+{
+  "source_asset": {
+    "extras": {
+      "author": "Saigon 3D City (https://sketchfab.com/saigon3dcity)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/ho-chi-minh-city-2025-thanh-pho-ho-chi-minh-10e6d7c014a141b4a4adec54729d0968",
+      "title": "Ho Chi Minh City 2025 - Th\u00e0nh Ph\u1ed1 H\u1ed3 Ch\u00ed Minh"
+    },
+    "generator": "Sketchfab-16.74.0",
+    "version": "2.0"
+  },
+  "triangles": 301490,
+  "vertices": 493715,
+  "source_bounds": [
+    [
+      0.0,
+      -1.5563969662159178e-12,
+      5.080794305991904e-15
+    ],
+    [
+      55.51212909311744,
+      48.729936642824214,
+      5.145146264153488
+    ]
+  ],
+  "scale": 3.602816236151112,
+  "origin": [
+    27.75606454655872,
+    24.36496832141133,
+    5.080794305991904e-15
+  ],
+  "bounds": [
+    [
+      -100.0,
+      -87.78250346169384,
+      0.0
+    ],
+    [
+      100.0,
+      87.78250346169384,
+      18.537016497864403
+    ]
+  ],
+  "units": "illustrative normalized units treated as metres in simulation; not surveyed georeferencing",
+  "textures": "omitted in STL export; geometry preserved"
+}

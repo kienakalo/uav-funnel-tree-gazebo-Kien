@@ -1,0 +1,185 @@
+{
+  "signature": "9be41981e0fadad77a277bd65f22e0ba0d44b9b35be6ac4d8692e6c4ed8f887e",
+  "complete": true,
+  "all_cases_passed": true,
+  "cases": [
+    {
+      "id": "original",
+      "description": "Original validated START-GOAL pair",
+      "source": 8236,
+      "goal": 8237,
+      "start_xyz": [
+        5.15,
+        2.0,
+        -4.85
+      ],
+      "goal_xyz": [
+        50.15,
+        2.0,
+        -44.85
+      ],
+      "status": "PASS",
+      "length": 68.08865483484692,
+      "surface_membership_passed": true,
+      "euclidean_lower_bound": 60.207972893961475,
+      "mesh_edge_reference_length": 72.75295533923479,
+      "no_longer_than_mesh_edge_reference": true,
+      "source_chain": [
+        8236,
+        2147,
+        1590,
+        3133,
+        3261,
+        3918,
+        8237
+      ],
+      "segments": 243,
+      "route_file": "original_route.json",
+      "seconds_including_validation": 0.2864880369997991,
+      "new_source_runs": 0,
+      "settled_sources": 115
+    },
+    {
+      "id": "short_open",
+      "description": "Short route in an open area",
+      "source": 8238,
+      "goal": 8239,
+      "requested_xz": [
+        [
+          5.0,
+          -5.0
+        ],
+        [
+          8.0,
+          -8.0
+        ]
+      ],
+      "start_xyz": [
+        5.216666666666667,
+        2.0,
+        -4.95
+      ],
+      "goal_xyz": [
+        7.833333333333333,
+        2.0,
+        -8.166666666666666
+      ],
+      "status": "PASS",
+      "length": 4.146551445344539,
+      "surface_membership_passed": true,
+      "euclidean_lower_bound": 4.146551445344539,
+      "mesh_edge_reference_length": 4.488816396023355,
+      "no_longer_than_mesh_edge_reference": true,
+      "source_chain": [
+        8238,
+        8239
+      ],
+      "segments": 14,
+      "route_file": "short_open_route.json",
+      "seconds_including_validation": 0.08905594399993788,
+      "new_source_runs": 0,
+      "settled_sources": 1
+    },
+    {
+      "id": "cross_city",
+      "description": "Detour across the central obstacle region",
+      "source": 8240,
+      "goal": 8241,
+      "requested_xz": [
+        [
+          8.0,
+          -20.0
+        ],
+        [
+          45.0,
+          -20.0
+        ]
+      ],
+      "start_xyz": [
+        8.166666666666666,
+        2.0,
+        -19.833333333333332
+      ],
+      "goal_xyz": [
+        44.833333333333336,
+        2.0,
+        -20.166666666666668
+      ],
+      "status": "PASS",
+      "length": 51.896851513427784,
+      "surface_membership_passed": true,
+      "euclidean_lower_bound": 36.668181786878336,
+      "mesh_edge_reference_length": 64.30170517860394,
+      "no_longer_than_mesh_edge_reference": true,
+      "source_chain": [
+        8240,
+        4611,
+        6329,
+        6452,
+        6649,
+        8241
+      ],
+      "segments": 218,
+      "route_file": "cross_city_route.json",
+      "seconds_including_validation": 0.2498560419999194,
+      "new_source_runs": 0,
+      "settled_sources": 101
+    },
+    {
+      "id": "narrow_corridor",
+      "description": "Short route along a narrow grid corridor",
+      "source": 8242,
+      "goal": 8243,
+      "requested_xz": [
+        [
+          27.25,
+          -27.75
+        ],
+        [
+          29.25,
+          -27.75
+        ]
+      ],
+      "corridor_selection": {
+        "cross_section_free_cells": 1,
+        "cross_section_width_model_units": 0.5,
+        "grid_cell": [
+          56,
+          42
+        ],
+        "along_axis": "X",
+        "scope": "local grid cross-section; not UAV clearance certification"
+      },
+      "start_xyz": [
+        27.333333333333332,
+        2.0,
+        -27.666666666666668
+      ],
+      "goal_xyz": [
+        29.166666666666668,
+        2.0,
+        -27.833333333333332
+      ],
+      "status": "PASS",
+      "length": 1.8408935028645457,
+      "surface_membership_passed": true,
+      "euclidean_lower_bound": 1.8408935028645457,
+      "mesh_edge_reference_length": 2.1083802566454817,
+      "no_longer_than_mesh_edge_reference": true,
+      "source_chain": [
+        8242,
+        8243
+      ],
+      "segments": 8,
+      "route_file": "narrow_corridor_route.json",
+      "seconds_including_validation": 0.06851115099971139,
+      "new_source_runs": 0,
+      "settled_sources": 3
+    }
+  ],
+  "cached_sources": 118,
+  "new_source_runs": 0,
+  "timing_scope": "shared cache, sequential cases, includes validation; not an uncached runtime comparison",
+  "optimality_certified": false,
+  "gazebo_flight_tested_for_new_cases": false
+}

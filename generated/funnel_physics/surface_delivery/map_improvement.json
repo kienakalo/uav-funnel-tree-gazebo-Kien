@@ -1,0 +1,11 @@
+{
+  "old_cell": 10,
+  "new_cell": 5,
+  "old_faces": 504,
+  "new_faces": 1600,
+  "common_old_route_samples": 320,
+  "mean_surface_height_reduction_at_same_xy": 1.978535972078043,
+  "max_surface_height_reduction_at_same_xy": 4.617841579243251,
+  "minimum_height_reduction_at_same_xy": 0.0,
+  "colour_method": "illustrative height-and-normal groups, same triangle geometry"
+}

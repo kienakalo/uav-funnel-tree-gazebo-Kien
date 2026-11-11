@@ -1,0 +1,138 @@
+{
+  "method": "polygon visibility graph over all non-collinear boundary corners and endpoints",
+  "mesh_sha256": "9b4bccb95593239193a316d6fe139770439e5e34f5dcb19bafed617d735c1857",
+  "benchmark_signature": "9be41981e0fadad77a277bd65f22e0ba0d44b9b35be6ac4d8692e6c4ed8f887e",
+  "domain_area": 1919.5,
+  "holes": 6,
+  "graph_vertices": 244,
+  "graph_edges": 1653,
+  "cases": [
+    {
+      "case": "original",
+      "status": "MATCHES_REFERENCE",
+      "funnel_length": 68.08865483484692,
+      "reference_length": 68.08865483484692,
+      "excess_length": 0.0,
+      "excess_percent": 0.0,
+      "length_tolerance": 1.6808865483484691e-06,
+      "funnel_covered_with_1e_minus_7_tolerance": true,
+      "reference_covered_exactly": true,
+      "reference_points_xz": [
+        [
+          5.15,
+          -4.85
+        ],
+        [
+          17.0,
+          -30.5
+        ],
+        [
+          18.0,
+          -36.5
+        ],
+        [
+          31.5,
+          -37.0
+        ],
+        [
+          33.0,
+          -37.5
+        ],
+        [
+          42.0,
+          -41.5
+        ],
+        [
+          50.15,
+          -44.85
+        ]
+      ],
+      "funnel_route_sha256": "23a8c5a2f4d8ddfa43a93dfeb26e81f80a5f2e2b290f1d87acf84a9d472788a6"
+    },
+    {
+      "case": "short_open",
+      "status": "MATCHES_REFERENCE",
+      "funnel_length": 4.146551445344539,
+      "reference_length": 4.146551445344539,
+      "excess_length": 0.0,
+      "excess_percent": 0.0,
+      "length_tolerance": 1.0414655144534453e-06,
+      "funnel_covered_with_1e_minus_7_tolerance": true,
+      "reference_covered_exactly": true,
+      "reference_points_xz": [
+        [
+          5.216666666666667,
+          -4.95
+        ],
+        [
+          7.833333333333333,
+          -8.166666666666666
+        ]
+      ],
+      "funnel_route_sha256": "a61f2ab4355464aff06efd5cfee60a2571120fc93d5dc681736106f2d3ecc048"
+    },
+    {
+      "case": "cross_city",
+      "status": "MATCHES_REFERENCE",
+      "funnel_length": 51.896851513427784,
+      "reference_length": 51.89685151342779,
+      "excess_length": -7.105427357601002e-15,
+      "excess_percent": -1.3691442063229103e-14,
+      "length_tolerance": 1.518968515134278e-06,
+      "funnel_covered_with_1e_minus_7_tolerance": true,
+      "reference_covered_exactly": true,
+      "reference_points_xz": [
+        [
+          8.166666666666666,
+          -19.833333333333332
+        ],
+        [
+          17.0,
+          -11.5
+        ],
+        [
+          29.5,
+          -3.0
+        ],
+        [
+          33.5,
+          -3.0
+        ],
+        [
+          35.5,
+          -5.0
+        ],
+        [
+          44.833333333333336,
+          -20.166666666666668
+        ]
+      ],
+      "funnel_route_sha256": "3919033f5871ffa97bbb16190d7272b307e807ec85e9b352f4f63bf11a847d94"
+    },
+    {
+      "case": "narrow_corridor",
+      "status": "MATCHES_REFERENCE",
+      "funnel_length": 1.8408935028645457,
+      "reference_length": 1.8408935028645457,
+      "excess_length": 0.0,
+      "excess_percent": 0.0,
+      "length_tolerance": 1.0184089350286454e-06,
+      "funnel_covered_with_1e_minus_7_tolerance": true,
+      "reference_covered_exactly": true,
+      "reference_points_xz": [
+        [
+          27.333333333333332,
+          -27.666666666666668
+        ],
+        [
+          29.166666666666668,
+          -27.833333333333332
+        ]
+      ],
+      "funnel_route_sha256": "408a793b983ef5e1cdc9e8689e51806d456cb9ba3d5a76491c5b722897d3cb7f"
+    }
+  ],
+  "all_match_reference": true,
+  "scope": "numerical planar reference for these cases and this navigation polygon; not a universal Funnel correctness certification",
+  "gazebo_routes_changed": false
+}

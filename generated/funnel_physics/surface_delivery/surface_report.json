@@ -1,0 +1,30 @@
+{
+  "mesh": {
+    "vertices": 858,
+    "triangles": 1600,
+    "edges": 2457,
+    "boundary_edges": 114,
+    "nonmanifold_edges": 0,
+    "bad_boundary_vertices": 0,
+    "disconnected_vertex_fans": 0,
+    "degenerate_triangles": 0,
+    "area": 18511.308941821422
+  },
+  "cell_size": 5.0,
+  "vertical_clearance": 1.5,
+  "horizontal_half_width": 1.6,
+  "max_axis_slope": 0.5,
+  "surface_altitude_range": [
+    1.5,
+    20.037015914916992
+  ],
+  "route_altitude_range": [
+    7.6804625604619225,
+    16.574313163757324
+  ],
+  "surface_membership_passed": true,
+  "whole_surface_clearance_passed": true,
+  "scope": "3D geodesic candidate on a conservative roof-and-terrain envelope above the city",
+  "optimality_certified": false,
+  "source_runs": 49
+}

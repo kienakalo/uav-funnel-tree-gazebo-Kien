@@ -1,0 +1,15 @@
+{
+  "type": "offline point-mass numerical integration, not Gazebo",
+  "dt": 0.002,
+  "route_duration": 225.5337036107364,
+  "max_tracking_error": 0.0005826949449646594,
+  "max_reference_speed": 4.999999999483727,
+  "closest_during_dwell": {
+    "0": 4.2892426014778774e-05,
+    "1": 4.286515329527246e-05,
+    "2": 2.890132568467159e-05,
+    "3": 1.1566945407649548e-05,
+    "4": 2.8927155781843865e-05
+  },
+  "final_error": 4.545429281956492e-08
+}

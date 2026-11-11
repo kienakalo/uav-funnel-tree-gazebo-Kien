@@ -1,0 +1,19 @@
+{
+  "height": 2.0,
+  "coordinates": "original transformed GLB scene, Y-up; section axes X/Z",
+  "units": "model units, not verified metres",
+  "sha256": "a3b642e8a4674a278975981247d97b836bda60977ce609bf3044b1b7839f4f22",
+  "triangle_plane_epsilon": 1e-06,
+  "endpoint_quantization": 1e-05,
+  "objects_with_sections": 44,
+  "crossing_faces": 3584,
+  "coplanar_faces": 0,
+  "raw_segments": 3579,
+  "unique_edges": 3571,
+  "components": 120,
+  "closed_cycle_components": 76,
+  "open_or_branched_components": 44,
+  "endpoint_count": 70,
+  "branch_vertex_count": 36,
+  "status": "section contours only; no obstacle interiors, UAV clearance or free-space mesh certified"
+}

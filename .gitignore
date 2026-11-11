@@ -1,0 +1,75 @@
+# Local environments, bytecode and temporary application files.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+.DS_Store
+Thumbs.db
+
+# Rebuildable exports and archives.
+/output/
+*.zip
+
+# The asset is kept once, in assets/city.glb.
+/data/input/city.glb
+
+# Keep a curated set of checked inputs and results. Other generated data,
+# profiling dumps, runtime packages and large propagation caches stay local.
+/generated/**
+!/generated/**/
+!/generated/funnel_input_y2p00.geom
+!/generated/funnel_route_candidate_y2p00.json
+!/generated/funnel_route_candidate_validation_y2p00.json
+!/generated/navigation_y2p00_grid.npz
+!/generated/funnel_preview/city.stl
+!/generated/funnel_preview/route.json
+!/generated/funnel_preview/funnel_demo.sdf
+!/generated/funnel_preview/city_metadata.json
+!/generated/funnel_benchmark/cases.json
+!/generated/funnel_benchmark/benchmark_results.json
+!/generated/funnel_benchmark/benchmark_summary.txt
+!/generated/funnel_benchmark/benchmark_routes.png
+!/generated/funnel_benchmark/*_route.json
+# This 5 MB source graph is an input fingerprint of the saved delivery plan.
+!/generated/funnel_benchmark/source_cache.json
+!/generated/funnel_reference/reference_comparison.json
+!/generated/funnel_reference/reference_comparison.md
+!/generated/funnel_reference/reference_routes.png
+!/generated/funnel_comparison/comparison_results.json
+!/generated/funnel_comparison/comparison_report.md
+!/generated/funnel_comparison/comparison_chart.png
+!/generated/final_check/FINAL_RESULTS.md
+!/generated/final_check/result_manifest.json
+!/generated/funnel_physics/route.json
+!/generated/funnel_physics/physics_telemetry.csv
+!/generated/funnel_physics/telemetry_metadata.json
+!/generated/funnel_physics/physics_validation.json
+!/generated/funnel_physics/physics_summary.txt
+!/generated/funnel_physics/physics_route_tracking.png
+!/generated/funnel_physics/physics_tracking_metrics.png
+!/generated/funnel_physics/*/route.json
+!/generated/funnel_physics/*/physics_telemetry.csv
+!/generated/funnel_physics/*/telemetry_metadata.json
+!/generated/funnel_physics/*/physics_validation.json
+!/generated/funnel_physics/*/physics_summary.txt
+!/generated/funnel_physics/*/physics_route_tracking.png
+!/generated/funnel_physics/*/physics_tracking_metrics.png
+!/generated/funnel_physics/delivery/horizontal_plan.json
+!/generated/funnel_physics/surface_delivery/surface.geom
+!/generated/funnel_physics/surface_delivery/surface.stl
+!/generated/funnel_physics/surface_delivery/surface_plan.json
+!/generated/funnel_physics/surface_delivery/surface_report.json
+!/generated/funnel_physics/surface_delivery/surface_validation.json
+!/generated/funnel_physics/surface_delivery/surface_altitude_profile.png
+!/generated/funnel_physics/surface_delivery/map_improvement.json
+!/generated/funnel_physics/surface_delivery/city_overview.png
+!/generated/funnel_physics/surface_delivery/city_destination.png
+!/generated/funnel_surface_reference/comparison.json
+!/generated/funnel_surface_reference/comparison.md
+!/generated/funnel_surface_reference/reference_route.json
+/generated/funnel_surface_reference/runtime/

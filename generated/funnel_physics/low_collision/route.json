@@ -1,0 +1,27 @@
+{
+  "case": "low_collision",
+  "waypoints": [
+    [
+      -57.74292375443709,
+      -49.23989126801341,
+      3.6
+    ],
+    [
+      -54.005877161018795,
+      -45.91807207386381,
+      3.6
+    ]
+  ],
+  "altitude": 3.6,
+  "length": 4.999999999999999,
+  "speed": 2.0,
+  "start_delay": 5.0,
+  "expected_centreline_intersection": [
+    -54.75328647970245,
+    -46.58243591269373,
+    3.6
+  ],
+  "max_acceleration": 3.0,
+  "mode": "force_feedback_point_mass",
+  "world": "funnel_physics_low_collision"
+}

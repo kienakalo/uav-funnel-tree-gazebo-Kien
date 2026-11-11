@@ -1,0 +1,48 @@
+{
+  "waypoints": [
+    [
+      -81.20530863474502,
+      -69.94856309274023,
+      7.205632472302205
+    ],
+    [
+      -71.77793948348295,
+      -58.35950419978749,
+      7.205632472302205
+    ]
+  ],
+  "speed": 2.0,
+  "length": 14.939262871323162,
+  "world": "funnel_physics_short_open",
+  "mode": "force_feedback_point_mass",
+  "source_route_sha256": "a61f2ab4355464aff06efd5cfee60a2571120fc93d5dc681736106f2d3ecc048",
+  "original_model_length": 4.146551445344539,
+  "original_waypoints": [
+    [
+      5.216666666666667,
+      2.0,
+      -4.95
+    ],
+    [
+      7.833333333333333,
+      2.0,
+      -8.166666666666666
+    ]
+  ],
+  "transform": {
+    "formula": "([X, -Z, Y] - origin) * scale",
+    "origin": [
+      27.75606454655872,
+      24.36496832141133,
+      5.080794305991904e-15
+    ],
+    "scale": 3.602816236151112
+  },
+  "altitude": 7.205632472302205,
+  "optimality_certified": false,
+  "units": "normalized simulation units treated as metres; not surveyed coordinates",
+  "source_route_file": "generated/funnel_benchmark/short_open_route.json",
+  "case": "short_open",
+  "max_acceleration": 3.0,
+  "start_delay": 8.0
+}

@@ -1,0 +1,24 @@
+{
+  "case": "original",
+  "checks_passed": true,
+  "last_phase": "complete",
+  "samples": 2984,
+  "telemetry_sha256": "4542b9354d46774a6a0b63afa50143a958864e982fc3f27300f9c3d11d7c2483",
+  "max_tracking_error": 0.002005475236096223,
+  "moving_rmse": 0.0008106604672860748,
+  "final_goal_error": 2.0467973217621765e-07,
+  "max_altitude_deviation": 0.0,
+  "max_measured_speed": 4.999903081587657,
+  "dwell_segments_observed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "obstacle_intersecting_sample_segments": [],
+  "route_sha256": "98dece61cd5b3ed7a4026fde9e4933e36820d842df6f87699b9dc73783830715",
+  "scope": "measured centreline and straight segments between CSV samples vs inflated obstacle columns; not a continuous-time contact proof",
+  "rotor_or_autopilot_simulation": false
+}

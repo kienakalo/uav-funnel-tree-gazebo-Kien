@@ -1,0 +1,84 @@
+{
+  "coordinate_system": "transformed GLB scene, Y-up, original model units, no Gazebo normalization",
+  "epsilon": 1e-06,
+  "total_faces": 301490,
+  "levels": [
+    {
+      "flight_height": 0.5,
+      "intersect_objects": 12,
+      "crossing_faces": 396,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 22
+    },
+    {
+      "flight_height": 1.0,
+      "intersect_objects": 52,
+      "crossing_faces": 17205,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 52
+    },
+    {
+      "flight_height": 1.5,
+      "intersect_objects": 46,
+      "crossing_faces": 5784,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 49
+    },
+    {
+      "flight_height": 2.0,
+      "intersect_objects": 44,
+      "crossing_faces": 3584,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 46
+    },
+    {
+      "flight_height": 2.5,
+      "intersect_objects": 38,
+      "crossing_faces": 2136,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 42
+    },
+    {
+      "flight_height": 3.0,
+      "intersect_objects": 27,
+      "crossing_faces": 1284,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 37
+    },
+    {
+      "flight_height": 3.5,
+      "intersect_objects": 23,
+      "crossing_faces": 1055,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 33
+    },
+    {
+      "flight_height": 4.0,
+      "intersect_objects": 14,
+      "crossing_faces": 214,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 23
+    },
+    {
+      "flight_height": 4.5,
+      "intersect_objects": 11,
+      "crossing_faces": 204,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 20
+    },
+    {
+      "flight_height": 5.0,
+      "intersect_objects": 4,
+      "crossing_faces": 132,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 7
+    },
+    {
+      "flight_height": 5.5,
+      "intersect_objects": 0,
+      "crossing_faces": 0,
+      "coplanar_faces": 0,
+      "world_bounds_candidates": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "surface_membership_passed": true,
+  "failed_segment_indices": [],
+  "mesh_sha256": "9b4bccb95593239193a316d6fe139770439e5e34f5dcb19bafed617d735c1857",
+  "route_sha256": "df8813bdbe091525562c1b3f221178be8d63c1c569b7aeb892cc8a8df8c49f95",
+  "segments_checked": 242,
+  "candidate_length": 68.08865483484692,
+  "euclidean_lower_bound": 60.207972893961475,
+  "mesh_edge_reference_length": 72.75295533923479,
+  "no_longer_than_mesh_edge_reference": true,
+  "optimality_certified": false,
+  "gazebo_route_updated": false
+}

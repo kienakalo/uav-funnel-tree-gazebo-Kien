@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.glb binary
+*.stl binary
+*.png binary
+*.npz binary
+*.pdf binary
+# Preserve byte-exact numerical fixtures and their recorded SHA256 values.
+*.geom -text
+generated/** -text

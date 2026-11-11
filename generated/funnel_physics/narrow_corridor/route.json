@@ -1,0 +1,48 @@
+{
+  "waypoints": [
+    [
+      -1.5230228785362798,
+      11.895412405159194,
+      7.205632472302205
+    ],
+    [
+      5.0821402210741,
+      12.495881777851038,
+      7.205632472302205
+    ]
+  ],
+  "speed": 2.0,
+  "length": 6.632401001145477,
+  "world": "funnel_physics_narrow_corridor",
+  "mode": "force_feedback_point_mass",
+  "source_route_sha256": "408a793b983ef5e1cdc9e8689e51806d456cb9ba3d5a76491c5b722897d3cb7f",
+  "original_model_length": 1.8408935028645457,
+  "original_waypoints": [
+    [
+      27.333333333333332,
+      2.0,
+      -27.666666666666668
+    ],
+    [
+      29.166666666666668,
+      2.0,
+      -27.833333333333332
+    ]
+  ],
+  "transform": {
+    "formula": "([X, -Z, Y] - origin) * scale",
+    "origin": [
+      27.75606454655872,
+      24.36496832141133,
+      5.080794305991904e-15
+    ],
+    "scale": 3.602816236151112
+  },
+  "altitude": 7.205632472302205,
+  "optimality_certified": false,
+  "units": "normalized simulation units treated as metres; not surveyed coordinates",
+  "source_route_file": "generated/funnel_benchmark/narrow_corridor_route.json",
+  "case": "narrow_corridor",
+  "max_acceleration": 3.0,
+  "start_delay": 8.0
+}

@@ -1,0 +1,71 @@
+{
+  "status": "READY",
+  "check_scope": "saved artifact/hash consistency only; no simulations or geometry checks rerun",
+  "cases": [
+    {
+      "case": "original",
+      "model_length": 68.08865483484692,
+      "reference_length": 68.08865483484692,
+      "max_tracking_error": 0.002005475236096223,
+      "moving_rmse": 0.0008106604672860748,
+      "speed_limit": 5.0,
+      "max_measured_speed": 4.999903081587657
+    },
+    {
+      "case": "short_open",
+      "model_length": 4.146551445344539,
+      "reference_length": 4.146551445344539,
+      "max_tracking_error": 0.0005247854217039219,
+      "moving_rmse": 0.0003709555473694254,
+      "speed_limit": 2.0,
+      "max_measured_speed": 1.9996153690482885
+    },
+    {
+      "case": "cross_city",
+      "model_length": 51.896851513427784,
+      "reference_length": 51.89685151342779,
+      "max_tracking_error": 0.002542982029566167,
+      "moving_rmse": 0.0008727831308585917,
+      "speed_limit": 5.0,
+      "max_measured_speed": 4.999769279704902
+    },
+    {
+      "case": "narrow_corridor",
+      "model_length": 1.8408935028645457,
+      "reference_length": 1.8408935028645457,
+      "max_tracking_error": 0.0009419261978333657,
+      "moving_rmse": 0.0006393689339370953,
+      "speed_limit": 2.0,
+      "max_measured_speed": 1.9995600956345096
+    }
+  ],
+  "artifact_sha256": {
+    "generated/funnel_benchmark/benchmark_results.json": "6a01bb20f71a5090d9fd6dc08a64153bc4ce6db0a5c3b17d94bca7f6e32cc2b9",
+    "generated/funnel_reference/reference_comparison.json": "cebefebf224d6d3fc99003af5e179c41458280d07bfebe467bb3671b3afaecff",
+    "generated/funnel_comparison/comparison_results.json": "69d8b7bae4c24eb2f98274fb1452c315094af33c3297d1e4bbc57e2713ca63b4",
+    "generated/funnel_input_y2p00.geom": "9b4bccb95593239193a316d6fe139770439e5e34f5dcb19bafed617d735c1857",
+    "generated/funnel_benchmark/original_route.json": "23a8c5a2f4d8ddfa43a93dfeb26e81f80a5f2e2b290f1d87acf84a9d472788a6",
+    "generated/funnel_physics/physics_validation.json": "e961a2c13844a716e7d58017663df8584c992339e4ef7f6c7acea7223e51e98d",
+    "generated/funnel_physics/route.json": "98dece61cd5b3ed7a4026fde9e4933e36820d842df6f87699b9dc73783830715",
+    "generated/funnel_physics/physics_telemetry.csv": "4542b9354d46774a6a0b63afa50143a958864e982fc3f27300f9c3d11d7c2483",
+    "generated/funnel_physics/telemetry_metadata.json": "5b03c3002d24b718ab8f2c2039ffe24d9f3a4194314a7681ec7550d0862a6390",
+    "generated/funnel_route_candidate_y2p00.json": "df8813bdbe091525562c1b3f221178be8d63c1c569b7aeb892cc8a8df8c49f95",
+    "generated/funnel_benchmark/short_open_route.json": "a61f2ab4355464aff06efd5cfee60a2571120fc93d5dc681736106f2d3ecc048",
+    "generated/funnel_physics/short_open/physics_validation.json": "939ae5b26106df8a0578558fd0d8cd48bd63652fae49c9d5eef41b02d0e401ca",
+    "generated/funnel_physics/short_open/route.json": "7d50fb2185736dbcf8b08ab41ef0a2a9865c10d4deff5c6daea6e990bf95ebcd",
+    "generated/funnel_physics/short_open/physics_telemetry.csv": "56b4d99bc2e360f434fdecc090b154449b88a04e3852ac496020faf403664ceb",
+    "generated/funnel_physics/short_open/telemetry_metadata.json": "af498e1b6e4c8d9e3ceffa6cf0c55bead5ff23b90fa36602e34ad488f243fa2e",
+    "generated/funnel_benchmark/cross_city_route.json": "3919033f5871ffa97bbb16190d7272b307e807ec85e9b352f4f63bf11a847d94",
+    "generated/funnel_physics/cross_city/physics_validation.json": "bbe0b9457f7fe710a760cb9d270599854a12cacff7d8283f60b585eb666ba47d",
+    "generated/funnel_physics/cross_city/route.json": "d2c2a3731d1ec452d7d66fa5b7fdbaace2c62ea39b4e9a63bd83ec6294602e8a",
+    "generated/funnel_physics/cross_city/physics_telemetry.csv": "0bdb2c52311350921ef8909f038040a1fe4deb0ac1cac7d6a94fc85d7e47b109",
+    "generated/funnel_physics/cross_city/telemetry_metadata.json": "aaead2a329d56d516db29ffeeebe15d2953f61e79e150c4ce2c9396762911b09",
+    "generated/funnel_benchmark/narrow_corridor_route.json": "408a793b983ef5e1cdc9e8689e51806d456cb9ba3d5a76491c5b722897d3cb7f",
+    "generated/funnel_physics/narrow_corridor/physics_validation.json": "49d0872fbe24625bf030199ab340c893b7a74e24d26e960599437b4f991b64bc",
+    "generated/funnel_physics/narrow_corridor/route.json": "4c3d43fe4b82b8430e9f1ced3c6ce4a8dadf7062f59107daf409e683167959ab",
+    "generated/funnel_physics/narrow_corridor/physics_telemetry.csv": "a0a37d76489bfbcc0a8688294ade24db9bd6172fa6bf848f6571834483a32a80",
+    "generated/funnel_physics/narrow_corridor/telemetry_metadata.json": "098be4333838011634596eafaaf1da37022cfc283fd8d46c1adcc6c74d259a9b"
+  },
+  "general_algorithm_correctness_certified": false,
+  "rotor_or_autopilot_simulation": false
+}

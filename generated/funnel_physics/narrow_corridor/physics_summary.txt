@@ -1,0 +1,23 @@
+KET QUA MO PHONG BAM TUYEN FUNNEL
+
+Kiem tra: True
+Trang thai cuoi: complete
+So mau do: 406
+Do dai tuyen (don vi mo hinh goc): 1.840893503
+Do dai tuyen (don vi mo phong): 6.632401001
+Sai lech bam tuyen lon nhat: 0.000941926
+RMSE khi di chuyen: 0.000639369
+Sai lech cuoi toi GOAL: 0.000001733084
+Sai lech do cao lon nhat: 0.000000000
+Toc do do duoc lon nhat: 1.999560096
+Cac doan co dung cho: [0]
+So doan noi mau giao cot vat can mo rong: 0
+
+PHAM VI
+Mo hinh khoi diem 1 kg co bu trong luc va dieu khien PD; chua mo phong luc day tung rotor/autopilot.
+Kiem tra hinh hoc ap dung cho tam drone va doan thang noi cac mau CSV; khong phai chung minh lien tuc theo thoi gian.
+Don vi mo phong duoc chuan hoa tu asset, chua phai du lieu dia ly do dac.
+Chua chung nhan tuyen ngan nhat toan cuc.
+
+Route SHA256: 4c3d43fe4b82b8430e9f1ced3c6ce4a8dadf7062f59107daf409e683167959ab
+Telemetry SHA256: 0ae34fa6a0322e1313850c830137a1a1151272914ae10d460844013e4b300839
