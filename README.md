@@ -184,7 +184,7 @@ cần lập lại kế hoạch tương ứng. Khi thay đổi cả pipeline mi�
 | `tools/compare_surface_geodesic.py` | Đối chiếu với MMP qua pygeodesic |
 | `tools/analyze_surface_delivery.py` | Kiểm tra telemetry trên lưới 3D |
 | `scripts/` | Cài đặt và mở mô phỏng |
-| `assets/city.glb` | Asset thành phố có ghi công |
+| `assets/city.glb` | Mô hình thành phố kèm nguồn và giấy phép |
 | `data/input`, `data/expected` | Năm mesh mẫu và dữ liệu đối chiếu |
 | `generated/` | Bộ dữ liệu đã kiểm tra và các kết quả sinh ra |
 
@@ -206,7 +206,7 @@ README dạng `.txt` để đối chiếu giữa các giai đoạn.
   chọn. Đối chiếu thành công cho ca hiện tại chưa chứng minh bản cài đặt
   đúng trên mọi lưới.
 
-## Ghi công
+## Tài liệu tham khảo
 
 Thuật toán dựa trên bài báo của Phan Thanh An, Tran Van Hoai và Vuong Ba Thinh,
 *The funnel tree algorithm for finding shortest paths on polyhedral surfaces*,
