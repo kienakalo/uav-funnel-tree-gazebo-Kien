@@ -13,21 +13,70 @@ dựng bề mặt dẫn đường 3D phía trên địa hình và công trình, 
 | Thành phần | Kết quả đã kiểm tra |
 | --- | --- |
 | Mô hình thành phố | 301.490 tam giác, đổi trục và chuẩn hóa kích thước ngang về 200 đơn vị |
-| Bề mặt dẫn đường 3D | 858 đỉnh, 1.600 tam giác, ô danh nghĩa 5 đơn vị |
+| Bề mặt dẫn đường 3D | Phủ toàn thành phố: 2.295 đỉnh, 4.400 tam giác, ô danh nghĩa 5 đơn vị |
 | Khoảng hở dựng bề mặt | Đứng tối thiểu 1,5 đơn vị, dự phòng ngang 1,6 |
 | Độ dài chặng trên bề mặt bằng Funnel | 142,418721777849 đơn vị mô phỏng |
 | Độ dài MMP tham chiếu | 142,418721777849 đơn vị mô phỏng |
-| Sai lệch bám tuyến lớn nhất trong lượt đã lưu | Khoảng 0,001819 đơn vị mô phỏng |
+| Sai lệch bám tuyến lớn nhất trong lượt đã lưu | Khoảng 0,002363 đơn vị mô phỏng |
 | Cao độ chặng bám bề mặt trong lượt đã lưu | Khoảng 7,68–16,57 đơn vị mô phỏng |
+| Giới hạn tốc độ / tốc độ hạ giao hàng | 5 / 1 đơn vị mô phỏng mỗi giây |
+| Thời gian hoàn tất kế hoạch | Khoảng 100,7 giây mô phỏng |
 
 Đối chiếu MMP dùng cùng lưới và cùng hai đầu mút của chặng trên bề mặt.
 Hai đường đều được kiểm tra thuộc bề mặt. Đây là kiểm chứng số cho ca đã lưu.
 Các đoạn tiếp cận bề mặt và hạ tại điểm giao được kiểm tra riêng bằng telemetry.
 
+Lưới phủ toàn thành phố đã được đối chiếu MMP. Bộ kết quả bay đã lưu được
+đo trong Gazebo không giao diện, cùng bước vật lý 0,002 giây. Cấu hình hiện
+tại bỏ thời gian chờ tại waypoint, tăng giới hạn tốc độ từ 3 lên 5, giữ
+giới hạn gia tốc 3 và tốc độ hạ giao hàng 1. Thời gian kế hoạch giảm từ
+158,3 xuống 100,7 giây mô phỏng. Drone vẫn giảm tốc về 0 ở các góc của
+đường gấp khúc; chưa bo góc hay bay xuyên waypoint với vận tốc khác 0.
+Log tiến độ mỗi 10 giây chỉ phục vụ theo dõi, độc lập với chuyển động.
+
 - [Kết quả đối chiếu MMP](generated/funnel_surface_reference/comparison.md)
 - [Số liệu kiểm tra bám bề mặt](generated/funnel_physics/surface_delivery/surface_validation.json)
 - [Biểu đồ cao độ](generated/funnel_physics/surface_delivery/surface_altitude_profile.png)
 - [Ảnh gần điểm giao](generated/funnel_physics/surface_delivery/city_destination.png)
+
+## Thí nghiệm một START đến ba đích
+
+Ba ca `g1`, `g2`, `g3` sử dụng cùng điểm xuất phát và cùng lưới phủ toàn
+thành phố. G1 giữ nhà đích hiện tại; G2 và G3 là hai vị trí giao hàng khác,
+cách các đích đã chọn ít nhất 45 đơn vị, có nền đỡ, cột hạ trống và mặt nhà
+gần đó. Đây là ba truy vấn độc lập, không phải một hành trình ghé ba nhà.
+
+Trong **VS Code — Terminal 1**, chọn một ca để xem Gazebo; đóng phiên cũ
+trước khi đổi ca:
+
+```powershell
+wsl.exe -d Ubuntu-24.04 --cd /mnt/c/DroneDemo/drone_gazebo_demo -- bash scripts/run_surface_gpu.sh --destination=g1 --show-surface
+```
+
+Thay `g1` bằng `g2` hoặc `g3`. Để dùng CPU, thay `run_surface_gpu.sh` bằng
+`run_surface_cpu.sh`. Các lệnh mặc định không có `--destination` vẫn chạy
+demo giao hàng ban đầu.
+
+Sau lượt bay, trong **VS Code — Terminal 2**, phân tích ca vừa chạy và cập
+nhật bảng tổng hợp:
+
+```powershell
+wsl.exe -d Ubuntu-24.04 --cd /mnt/c/DroneDemo/drone_gazebo_demo -- .venv/bin/python tools/run_city_three_goals.py --stage analyze --destination g1
+```
+
+Tính lại toàn bộ ba tuyến, đối chiếu MMP và mô phỏng không giao diện:
+
+```powershell
+wsl.exe -d Ubuntu-24.04 --cd /mnt/c/DroneDemo/drone_gazebo_demo -- .venv/bin/python tools/run_city_three_goals.py --stage all
+```
+
+- [Bảng tổng hợp](generated/city_three_goals/summary.md)
+- [Số liệu ba ca](generated/city_three_goals/results.json)
+- [Hình ba tuyến](generated/city_three_goals/routes.png)
+
+Kết quả từng ca nằm trong `generated/city_three_goals/g1`, `g2`, `g3`.
+Thời gian lập tuyến được ghi rõ số nguồn tính mới và số nguồn dùng lại
+cache; không diễn giải các lượt nối tiếp này là phép so sánh cold-start.
 
 ## Môi trường
 
@@ -158,13 +207,19 @@ Trong **Ubuntu 2**, có thể kiểm tra bộ bốn ca phẳng đã lưu:
 Trong **Ubuntu 2**, khi Gazebo đã đóng:
 
 ```bash
-.venv/bin/python tools/plan_surface_delivery.py --cell 5
+.venv/bin/python tools/plan_surface_delivery.py --cell 5 --coverage city
 .venv/bin/python tools/compare_surface_geodesic.py
 ```
 
 Sau đó chạy lại mô phỏng trong **Ubuntu 1** và xuất telemetry mới. Bộ lập
 tuyến lưu checkpoint cho các nguồn Funnel. Thời gian tính phụ thuộc kích
 thước lưới và số nguồn phụ.
+
+`--coverage city` dựng lưới phủ toàn bộ giới hạn ngang của thành phố, thêm
+vùng đệm 16 đơn vị và làm tròn theo kích thước ô. Đây là chế độ mặc định.
+`--coverage mission` giới hạn lưới quanh START/GOAL như các lượt thử trước.
+Đổi phạm vi lưới cần chạy lại phép đối chiếu MMP và mô phỏng trước khi dùng
+kết quả telemetry để đánh giá bản mới.
 
 Kế hoạch lưu SHA256 của đầu vào và mã liên quan. Nếu sửa một tệp đầu vào,
 cần lập lại kế hoạch tương ứng. Khi thay đổi cả pipeline miền phẳng, xem

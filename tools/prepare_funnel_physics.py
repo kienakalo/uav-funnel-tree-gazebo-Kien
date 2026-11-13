@@ -19,6 +19,51 @@ DELIVERY_PAD_SIZE = 1.0
 DELIVERY_PAD_THICKNESS = 0.1
 
 
+def add_surface_overlay(world, out):
+    """Draw a translucent surface and batched, double-sided triangle edges."""
+    from mesh import read_geom
+    mesh = read_geom(out / 'surface.geom')
+    triangles = []
+    for a, b in sorted(mesh.edge_faces):
+        pa, pb = mesh.points[a], mesh.points[b]
+        start = np.array([pa.x, pa.y, pa.z + .04])
+        end = np.array([pb.x, pb.y, pb.z + .04])
+        delta = end - start
+        side = np.cross(delta, [0., 0., 1.])
+        if np.linalg.norm(side) < 1e-12:
+            side = np.cross(delta, [1., 0., 0.])
+        side *= .035 / np.linalg.norm(side)
+        p, q, r, s = start-side, start+side, end+side, end-side
+        for triangle in ((p, q, r), (p, r, s)):
+            triangles.extend((triangle, triangle[::-1]))
+    records = np.zeros(len(triangles), dtype=CITY_STL_RECORD)
+    records['triangle'] = triangles
+    normal = np.cross(records['triangle'][:, 1] - records['triangle'][:, 0],
+                      records['triangle'][:, 2] - records['triangle'][:, 0])
+    normal /= np.linalg.norm(normal, axis=1)[:, None]
+    records['normal'] = normal
+    edge_path = out / 'surface_edges.stl'
+    with edge_path.open('wb') as stream:
+        stream.write(b'Navigation mesh edges'.ljust(80, b'\0'))
+        stream.write(len(records).to_bytes(4, 'little'))
+        stream.write(records.tobytes())
+    model = ET.SubElement(world, 'model', name='navigation_surface')
+    ET.SubElement(model, 'static').text = 'true'
+    link = ET.SubElement(model, 'link', name='surface')
+    for name, path, color, transparency in (
+        ('navigation_mesh', out/'surface.stl', '.05 .65 .8 1', '.75'),
+        ('triangle_edges', edge_path, '.02 .25 .4 1', '0'),
+    ):
+        visual = ET.SubElement(link, 'visual', name=name)
+        ET.SubElement(visual, 'cast_shadows').text = 'false'
+        ET.SubElement(ET.SubElement(ET.SubElement(visual, 'geometry'), 'mesh'), 'uri').text = path.as_uri()
+        material = ET.SubElement(visual, 'material')
+        for field in ('ambient', 'diffuse', 'emissive'):
+            ET.SubElement(material, field).text = color
+        ET.SubElement(visual, 'transparency').text = transparency
+    print(f'Save at: {edge_path}')
+
+
 def benchmark_route(case,preview_route):
     from run_funnel_benchmark import verify
     from mesh import read_geom
@@ -118,13 +163,13 @@ def low_collision_route(city_stl, preview_route):
                 expected_centreline_intersection=impact.tolist())
 
 
-def delivery_route(city_stl, preview_route, case='delivery'):
+def delivery_route(city_stl, preview_route, case='delivery', plan_folder=None):
     """Use a saved Funnel plan and check the final vertical delivery approach."""
     from shapely.geometry import Polygon, box
     from shapely.ops import unary_union
 
     filename = 'surface_plan.json' if case == 'surface_delivery' else 'horizontal_plan.json'
-    plan_path = ROOT / f'generated/funnel_physics/{case}' / filename
+    plan_path = (Path(plan_folder) if plan_folder is not None else ROOT / f'generated/funnel_physics/{case}') / filename
     plan = json.loads(plan_path.read_text())
     for relative, digest in plan['input_sha256'].items():
         if hashlib.sha256((ROOT / relative).read_bytes()).hexdigest() != digest:
@@ -174,6 +219,7 @@ def delivery_route(city_stl, preview_route, case='delivery'):
                 delivery_destination=plan['selection'],
                 delivery_clearance_aabb={'min': lower, 'max': upper})
     if case == 'surface_delivery':
+        result.update(speed=5., dwell=0.)
         result['surface_plan_sha256'] = hashlib.sha256(plan_path.read_bytes()).hexdigest()
         result['surface_following_length'] = horizontal_length
         result['horizontal_length'] = sum(math.dist(a[:2], b[:2]) for a, b in zip(horizontal_points, horizontal_points[1:]))
@@ -236,8 +282,11 @@ def configure_surface_gui(world):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--case',choices=('original','cross_city','short_open','narrow_corridor','low_collision','delivery','surface_delivery'),default='original')
-    parser.add_argument('--show-surface',action='store_true',help='Show the transparent 3D navigation mesh')
+    parser.add_argument('--show-surface',action='store_true',help='Show the 3D navigation surface and triangle edges')
+    parser.add_argument('--destination',choices=('g1','g2','g3'),help='Select a saved fixed-START city experiment')
     args=parser.parse_args()
+    if args.destination and args.case!='surface_delivery':
+        parser.error('--destination requires --case surface_delivery')
     generated=ROOT/'generated'
     preview=generated/'funnel_preview'
     out=generated/'funnel_physics'
@@ -254,11 +303,15 @@ def main():
         if args.case=='low_collision':
             route=low_collision_route(preview/'city.stl',route)
         elif args.case in ('delivery','surface_delivery'):
-            route=delivery_route(preview/'city.stl',route,args.case)
+            mission_folder=ROOT/'generated/city_three_goals'/args.destination if args.destination else None
+            route=delivery_route(preview/'city.stl',route,args.case,mission_folder)
         else:
             route=benchmark_route(args.case,route)
         out=out/args.case
         world_name+='_'+args.case
+    if args.destination:
+        out=ROOT/'generated/city_three_goals'/args.destination
+        world_name+='_'+args.destination
     out.mkdir(exist_ok=True,parents=True)
     if args.case not in ('low_collision','delivery','surface_delivery'):
         route['speed']=5.
@@ -275,15 +328,7 @@ def main():
     if args.case=='surface_delivery':
         configure_surface_gui(world)
     if args.case=='surface_delivery' and args.show_surface:
-        surface_model=ET.SubElement(world,'model',name='navigation_surface')
-        ET.SubElement(surface_model,'static').text='true'
-        link=ET.SubElement(surface_model,'link',name='surface')
-        visual=ET.SubElement(link,'visual',name='navigation_mesh')
-        ET.SubElement(ET.SubElement(ET.SubElement(visual,'geometry'),'mesh'),'uri').text=(out/'surface.stl').as_uri()
-        material=ET.SubElement(visual,'material')
-        ET.SubElement(material,'ambient').text='.05 .65 .8 .18'
-        ET.SubElement(material,'diffuse').text='.05 .65 .8 .18'
-        ET.SubElement(visual,'transparency').text='.82'
+        add_surface_overlay(world, out)
     if args.case in ('short_open','narrow_corridor'):
         centre=np.mean([route['waypoints'][0],route['waypoints'][-1]],axis=0)
         camera=centre+np.array([12.,-16.,12.])
@@ -338,11 +383,11 @@ def main():
     ET.indent(tree.getroot())
     tree.write(out/'funnel_physics.sdf',encoding='utf-8',xml_declaration=True)
     (out/'route.json').write_text(json.dumps(route,indent=2)+'\n')
-    trajectory=Trajectory(route['waypoints'],route['speed'],max_acceleration=route['max_acceleration'],
+    trajectory=Trajectory(route['waypoints'],route['speed'],dwell=route.get('dwell',1.5),max_acceleration=route['max_acceleration'],
                           descent_speed=route.get('descent_speed'))
     duration=trajectory.duration+route.get('start_delay',2.)
     print(f'Prepared: {out / "funnel_physics.sdf"}')
-    print(f'Force feedback tracking; speed limit {route["speed"]:g}; stop and dwell at corners; duration about {duration:.1f} simulated seconds.')
+    print(f'Force feedback tracking; speed limit {route["speed"]:g}; waypoint dwell {trajectory.dwell:g}s; duration about {duration:.1f} simulated seconds.')
     print(f'Telemetry: {out / "physics_telemetry.csv"}')
     if args.case=='low_collision':
         print(f'Collision experiment: Gazebo Z={route["altitude"]:g}; aim through the city mesh.')

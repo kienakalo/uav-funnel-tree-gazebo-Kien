@@ -15,6 +15,14 @@ thư viện cài cục bộ và các bản chạy trung gian được bỏ qua.
 Lệnh chạy nằm trong [README chính](../README.md). Thư mục này có cả dữ liệu
 đầu vào cho các bước sau; cần kiểm tra phụ thuộc trước khi xóa hoặc đổi tên.
 
+## Thí nghiệm một START đến ba đích
+
+Thí nghiệm một START đến ba đích trên cùng lưới 3D nằm tại
+[`city_three_goals/`](city_three_goals/): `cases.json` lưu điểm đầu/đích,
+`results.json` và `summary.md` tổng hợp, `routes.png` minh họa ba tuyến.
+Mỗi thư mục `g1`, `g2`, `g3` chứa kế hoạch, đối chiếu MMP và kết quả Gazebo
+riêng. Cache lan truyền và world dựng lại vẫn được bỏ qua bởi Git.
+
 ## Các giai đoạn thực nghiệm trước
 
 - `funnel_benchmark/`: bốn ca kiểm tra hình học trên miền dẫn đường phẳng.

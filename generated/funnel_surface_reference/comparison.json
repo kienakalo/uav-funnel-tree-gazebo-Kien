@@ -1,10 +1,10 @@
 {
   "status": "MATCHES_EXACT_REFERENCE",
   "matches_reference": true,
-  "mesh_vertices": 858,
-  "mesh_faces": 1600,
-  "source": 125,
-  "goal": 706,
+  "mesh_vertices": 2295,
+  "mesh_faces": 4400,
+  "source": 792,
+  "goal": 1810,
   "funnel_length": 142.41872177784873,
   "exact_reference_length": 142.41872177784873,
   "excess_length": 0.0,
@@ -17,7 +17,7 @@
   "rotated_reference_length": 142.4187217778487,
   "reference_method": "Kirsanov exact MMP geodesic algorithm through pygeodesic",
   "reference_version": "0.1.11",
-  "reference_seconds": 0.005564082000034887,
+  "reference_seconds": 0.03719557499999837,
   "reference_self_tests": [
     {
       "case": "flat_square",
@@ -36,6 +36,6 @@
   "numerical_optimality_verified_for_this_case": true,
   "formal_arithmetic_certificate": false,
   "general_funnel_implementation_correctness_certified": false,
-  "mesh_sha256": "e682d5155a5383cacf030b05daff0328b82c52fcbac1c5f4169f5baca62d68ec",
-  "surface_plan_sha256": "a401d5d23bac1c6c46fd64090b82962bcb8afd74984a147d31c98530854c91fd"
+  "mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
+  "surface_plan_sha256": "f7e4a5a9322d180ddb03bd8b6fc9f18f639c36090b7e2d2746937fb511a300e7"
 }

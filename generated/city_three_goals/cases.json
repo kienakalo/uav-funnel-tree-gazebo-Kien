@@ -1,0 +1,127 @@
+{
+  "fixed_start": [
+    -38.7521239854311,
+    22.103391740920674,
+    7.205632472302205
+  ],
+  "surface_source": 792,
+  "mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
+  "mesh_vertices": 2295,
+  "mesh_faces": 4400,
+  "scope": "three independent START-to-GOAL queries on an identical city safety-envelope mesh",
+  "planning_timing_scope": "sequential queries sharing a checkpoint cache; includes reconstruction and checkpoint writes; not a cold-start performance comparison",
+  "cases": [
+    {
+      "id": "g1",
+      "region": "existing far destination",
+      "goal": 1810,
+      "selection": {
+        "vertex": 1810,
+        "world": [
+          74.73658745332892,
+          -55.35715733632823,
+          7.205632472302205
+        ],
+        "distance": 137.40387289803377,
+        "ground_z": 2.888472318649292,
+        "wall_distance": 3.5853457594949623,
+        "wall_triangle": 189957,
+        "wall": [
+          [
+            71.6077651977539,
+            -57.1079216003418,
+            6.2728962898254395
+          ],
+          [
+            69.46588897705078,
+            -59.32307434082031,
+            6.2728962898254395
+          ],
+          [
+            69.46588897705078,
+            -59.32307434082031,
+            2.8866353034973145
+          ]
+        ],
+        "candidates_considered": 8238,
+        "rank": 547,
+        "selection_scope": "farthest eligible navigation vertex by planar Euclidean distance",
+        "original_navigation_vertex": 7644
+      }
+    },
+    {
+      "id": "g2",
+      "region": "spatially separated city destination",
+      "goal": 1910,
+      "selection": {
+        "vertex": 1910,
+        "world": [
+          80.0,
+          -10.0,
+          10.455583572387695
+        ],
+        "distance": 123.0150182389216,
+        "ground_z": 2.888472318649292,
+        "wall_distance": 5.86261604594791,
+        "wall_triangle": 114667,
+        "wall": [
+          [
+            77.91957092285156,
+            -4.51893424987793,
+            2.888472318649292
+          ],
+          [
+            76.69014739990234,
+            -3.956066370010376,
+            2.888472318649292
+          ],
+          [
+            76.69014739990234,
+            -3.956066370010376,
+            8.955583572387695
+          ]
+        ],
+        "candidates_considered": 1866,
+        "rank": 421,
+        "selection_scope": "farthest eligible mesh vertex at least 45 units from previously selected goals and 30 units from START"
+      }
+    },
+    {
+      "id": "g3",
+      "region": "spatially separated city destination",
+      "goal": 1518,
+      "selection": {
+        "vertex": 1518,
+        "world": [
+          40.0,
+          50.0,
+          15.172356605529785
+        ],
+        "distance": 83.54709919905804,
+        "ground_z": 2.888472318649292,
+        "wall_distance": 5.901151039695374,
+        "wall_triangle": 91903,
+        "wall": [
+          [
+            44.75836181640625,
+            46.48341751098633,
+            13.278704643249512
+          ],
+          [
+            44.059810638427734,
+            45.66931915283203,
+            2.888472318649292
+          ],
+          [
+            44.059810638427734,
+            45.66931915283203,
+            13.278704643249512
+          ]
+        ],
+        "candidates_considered": 1686,
+        "rank": 871,
+        "selection_scope": "farthest eligible mesh vertex at least 45 units from previously selected goals and 30 units from START"
+      }
+    }
+  ]
+}

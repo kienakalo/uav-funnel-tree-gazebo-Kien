@@ -1,16 +1,37 @@
 {
   "mesh": {
-    "vertices": 858,
-    "triangles": 1600,
-    "edges": 2457,
-    "boundary_edges": 114,
+    "vertices": 2295,
+    "triangles": 4400,
+    "edges": 6694,
+    "boundary_edges": 188,
     "nonmanifold_edges": 0,
     "bad_boundary_vertices": 0,
     "disconnected_vertex_fans": 0,
     "degenerate_triangles": 0,
-    "area": 18511.308941821422
+    "area": 52782.16744244355
   },
   "cell_size": 5.0,
+  "coverage": "city",
+  "surface_xy_bounds": [
+    [
+      -120.0,
+      -105.0
+    ],
+    [
+      120.0,
+      105.0
+    ]
+  ],
+  "city_xy_bounds": [
+    [
+      -100.0,
+      -87.78250122070312
+    ],
+    [
+      100.0,
+      87.78250122070312
+    ]
+  ],
   "vertical_clearance": 1.5,
   "horizontal_half_width": 1.6,
   "max_axis_slope": 0.5,

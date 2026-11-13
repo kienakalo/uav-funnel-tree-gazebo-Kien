@@ -1,0 +1,9 @@
+{
+  "previous_nominal_seconds": 158.26420519203367,
+  "updated_nominal_seconds": 100.66376006952765,
+  "saved_seconds": 57.60044512250602,
+  "cruise_speed_limit": 5.0,
+  "descent_speed_limit": 1.0,
+  "waypoint_dwell": 0.0,
+  "scope": "same Funnel path, isolated headless Gazebo run, unchanged physics step"
+}

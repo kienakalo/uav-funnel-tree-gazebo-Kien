@@ -30,15 +30,19 @@ HALF_WIDTH = 1.6
 MAX_AXIS_SLOPE = .5
 
 
-def build_surface(start, goal, step):
+def build_surface(start, goal, step, coverage='city'):
     """Every whole mesh cell clears all inflated city-triangle AABBs below it."""
     triangles = np.fromfile(ROOT / 'generated/funnel_preview/city.stl',
                             dtype=CITY_STL_RECORD, offset=84)['triangle']
     low, high = triangles.min(axis=1), triangles.max(axis=1)
     spatial = STRtree(polygons(triangles[:, :, :2]))
     xy = np.array([start[:2], goal[:2]])
-    minimum = np.floor((xy.min(axis=0) - 16.) / step) * step
-    maximum = np.ceil((xy.max(axis=0) + 16.) / step) * step
+    if coverage == 'city':
+        extent = np.vstack((low[:, :2], high[:, :2], xy))
+    else:
+        extent = xy
+    minimum = np.floor((extent.min(axis=0) - 16.) / step) * step
+    maximum = np.ceil((extent.max(axis=0) + 16.) / step) * step
     xs = np.unique(np.r_[np.arange(minimum[0], maximum[0] + step / 2, step), xy[:, 0]])
     ys = np.unique(np.r_[np.arange(minimum[1], maximum[1] + step / 2, step), xy[:, 1]])
     required = np.empty((len(xs) - 1, len(ys) - 1))
@@ -151,6 +155,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--cell', type=float, default=5.)
     parser.add_argument('--seconds', type=float, default=30.)
+    parser.add_argument('--coverage', choices=('city', 'mission'), default='city',
+                        help='Cover the entire city (default) or only the mission bounds')
     args = parser.parse_args()
     if not math.isfinite(args.cell) or args.cell <= 0 or not math.isfinite(args.seconds) or args.seconds <= 0:
         parser.error('Cell size and time limit must be positive and finite')
@@ -163,7 +169,7 @@ def main():
     start = np.array(flat['fixed_start'])
     ground = flat['selection']['ground_z']
     goal = np.r_[flat['waypoints'][-1][:2], ground + 1.1]
-    mesh, points, faces, source, target, stats = build_surface(start, goal, args.cell)
+    mesh, points, faces, source, target, stats = build_surface(start, goal, args.cell, args.coverage)
     write_geom(OUT / 'surface.geom', points, faces, stats['edges'])
     write_stl(OUT / 'surface.stl', points, faces)
     signature = hashlib.sha256((OUT / 'surface.geom').read_bytes() + (ROOT / 'src/funnel_tree.py').read_bytes()
@@ -189,7 +195,12 @@ def main():
                 source_chain=chain, source_runs=runs, fixed_start=start.tolist(),
                 selection=flat['selection'], optimality_certified=False,
                 input_sha256={p: hashlib.sha256((ROOT / p).read_bytes()).hexdigest() for p in inputs})
-    report = dict(mesh=stats, cell_size=args.cell, vertical_clearance=CLEARANCE,
+    city_xy = np.fromfile(ROOT / 'generated/funnel_preview/city.stl',
+                          dtype=CITY_STL_RECORD, offset=84)['triangle'][:, :, :2]
+    report = dict(mesh=stats, cell_size=args.cell, coverage=args.coverage,
+                  surface_xy_bounds=[points[:, :2].min(axis=0).tolist(), points[:, :2].max(axis=0).tolist()],
+                  city_xy_bounds=[city_xy.min(axis=(0, 1)).tolist(), city_xy.max(axis=(0, 1)).tolist()],
+                  vertical_clearance=CLEARANCE,
                   horizontal_half_width=HALF_WIDTH, max_axis_slope=MAX_AXIS_SLOPE,
                   surface_altitude_range=[float(points[:, 2].min()), float(points[:, 2].max())],
                   route_altitude_range=[min(p[2] for p in path), max(p[2] for p in path)],

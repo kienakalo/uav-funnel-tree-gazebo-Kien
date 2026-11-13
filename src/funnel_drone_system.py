@@ -17,6 +17,7 @@ class FunnelDroneSystem(DroneSystem):
         if case not in ('original','cross_city','short_open','narrow_corridor','low_collision','delivery','surface_delivery'):
             raise ValueError('Unknown Funnel physics case')
         folder='generated/funnel_physics'+('' if case=='original' else '/'+case)
+        folder=os.environ.get('FUNNEL_OUTPUT_DIR',folder)
         self.route_relative_path=folder+'/route.json'
         self.telemetry_relative_path=folder+'/physics_telemetry.csv'
         if case!='original':

@@ -1,0 +1,8 @@
+{
+  "route_sha256": "99c5be4dd7f64b5d2b866a5eb76fc19d5023e8b990facc754ac5011966546d9c",
+  "model": "1 kg point mass with force feedback; box body collision; decorative rotors",
+  "nominal_duration": 94.4138812663245,
+  "case": "surface_delivery",
+  "world": "funnel_physics_surface_delivery_g3",
+  "run_id": "1794591560362696070-435"
+}

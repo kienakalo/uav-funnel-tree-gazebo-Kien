@@ -37,7 +37,10 @@ def surface_deviation(positions, triangles):
     return max(errors)
 
 
-def main():
+def main(folder=None):
+    global OUT
+    if folder is not None:
+        OUT = Path(folder)
     route_bytes = (OUT / 'route.json').read_bytes()
     route = json.loads(route_bytes)
     plan_path = OUT / 'surface_plan.json'

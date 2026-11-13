@@ -18,6 +18,11 @@ GPU dùng `GALLIUM_DRIVER=d3d12` trên WSLg. CPU dùng `llvmpipe` và ép softwa
 rendering. Cả hai có thể thêm `--show-surface`. Các lệnh kiểm tra số liệu
 trong Ubuntu 2 dùng chung cho hai chế độ.
 
+Ca `surface_delivery` hiện dùng giới hạn tốc độ 5, gia tốc 3, tốc độ hạ 1
+và thời gian chờ waypoint 0 giây. Kế hoạch hoàn tất khoảng 100,7 giây mô
+phỏng. Drone vẫn giảm tốc về 0 tại góc; log tiến độ xuất mỗi 10 giây.
+Các ca phẳng khác giữ thời gian chờ waypoint mặc định 1,5 giây.
+
 Nhóm sử dụng Ubuntu 24.04/WSL và Gazebo Harmonic cho các thử nghiệm. Các công
 cụ phân tích gọi trực tiếp `.venv/bin/python`; plugin Gazebo sử dụng Python
 hệ thống thông qua script thiết lập môi trường riêng.
@@ -181,8 +186,8 @@ MMP độc lập:
 ```
 
 Bộ giải `pygeodesic` phiên bản 0.1.11 đã được cài riêng tại
-`generated/funnel_surface_reference/runtime`. Kết quả của lưới 858 đỉnh,
-1.600 mặt hiện tại là `MATCHES_EXACT_REFERENCE`. Funnel và tham chiếu cùng
+`generated/funnel_surface_reference/runtime`. Kết quả của lưới phủ toàn
+thành phố 2.295 đỉnh, 4.400 mặt là `MATCHES_EXACT_REFERENCE`. Funnel và tham chiếu cùng
 có độ dài 142,418721777849 đơn vị mô phỏng. Phép so sánh dùng đúng cùng lưới
 và hai đỉnh đầu-cuối của chặng bám bề mặt. Các đoạn tiếp cận bề mặt và hạ
 giao hàng được kiểm tra riêng trong mô phỏng.

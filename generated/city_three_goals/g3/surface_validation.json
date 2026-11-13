@@ -1,0 +1,17 @@
+{
+  "checks_passed": true,
+  "samples": 984,
+  "surface_samples": 672,
+  "max_tracking_error": 0.00224293148088408,
+  "final_goal_error": 6.66442264486861e-07,
+  "measured_surface_altitude_range": [
+    8.018724884663309,
+    15.171933235675523
+  ],
+  "max_vertical_surface_deviation": 0.0007744525681463443,
+  "min_sampled_city_clearance_under_body": 1.1000006664422646,
+  "route_sha256": "99c5be4dd7f64b5d2b866a5eb76fc19d5023e8b990facc754ac5011966546d9c",
+  "telemetry_sha256": "399ff34c9fbaadbdcf914992b4177a8d50354c0b13d75614dbeec4fffba81abe",
+  "surface_mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
+  "scope": "measured point-mass trajectory against the 3D mesh and city triangle AABBs under the body footprint"
+}

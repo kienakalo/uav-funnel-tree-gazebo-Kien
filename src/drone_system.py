@@ -25,7 +25,7 @@ class DroneSystem:
         self.start_delay=float(data.get('start_delay',2.))
         if not math.isfinite(self.start_delay) or self.start_delay<0:
             raise ValueError('Invalid trajectory start delay')
-        self.trajectory=Trajectory(data['waypoints'],max_speed=data.get('speed',5.),dwell=1.5,
+        self.trajectory=Trajectory(data['waypoints'],max_speed=data.get('speed',5.),dwell=data.get('dwell',1.5),
                                    max_acceleration=data.get('max_acceleration'),
                                    descent_speed=data.get('descent_speed'))
         self.log=(root/self.telemetry_relative_path).open('w',newline='')

@@ -44,9 +44,12 @@ def reference_self_tests(geodesic):
     return results
 
 
-def main():
+def main(folder=None, output=None):
+    global OUT
+    if output is not None:
+        OUT = Path(output)
     from pygeodesic import geodesic
-    folder = ROOT / 'generated/funnel_physics/surface_delivery'
+    folder = Path(folder) if folder is not None else ROOT / 'generated/funnel_physics/surface_delivery'
     plan_bytes = (folder / 'surface_plan.json').read_bytes()
     plan = json.loads(plan_bytes)
     for relative, expected in plan['input_sha256'].items():

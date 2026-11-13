@@ -66,6 +66,7 @@ Thumbs.db
 !/generated/funnel_physics/surface_delivery/surface_plan.json
 !/generated/funnel_physics/surface_delivery/surface_report.json
 !/generated/funnel_physics/surface_delivery/surface_validation.json
+!/generated/funnel_physics/surface_delivery/timing_comparison.json
 !/generated/funnel_physics/surface_delivery/surface_altitude_profile.png
 !/generated/funnel_physics/surface_delivery/map_improvement.json
 !/generated/funnel_physics/surface_delivery/city_overview.png
@@ -74,3 +75,21 @@ Thumbs.db
 !/generated/funnel_surface_reference/comparison.md
 !/generated/funnel_surface_reference/reference_route.json
 /generated/funnel_surface_reference/runtime/
+
+# Fixed-START, three-destination experiment: selected reproducible inputs/results.
+!/generated/city_three_goals/cases.json
+!/generated/city_three_goals/results.json
+!/generated/city_three_goals/summary.md
+!/generated/city_three_goals/routes.png
+!/generated/city_three_goals/g*/surface.geom
+!/generated/city_three_goals/g*/surface.stl
+!/generated/city_three_goals/g*/surface_plan.json
+!/generated/city_three_goals/g*/planning_stats.json
+!/generated/city_three_goals/g*/route.json
+!/generated/city_three_goals/g*/physics_telemetry.csv
+!/generated/city_three_goals/g*/telemetry_metadata.json
+!/generated/city_three_goals/g*/surface_validation.json
+!/generated/city_three_goals/g*/surface_altitude_profile.png
+!/generated/city_three_goals/g*/reference/comparison.json
+!/generated/city_three_goals/g*/reference/comparison.md
+!/generated/city_three_goals/g*/reference/reference_route.json

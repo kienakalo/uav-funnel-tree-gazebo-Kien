@@ -5,21 +5,30 @@ case_name=original
 software=false
 show_surface=false
 case_set=false
+destination=''
 for argument in "$@"; do
   case "$argument" in
     --software) software=true ;;
     --show-surface) show_surface=true ;;
+    --destination=g1|--destination=g2|--destination=g3) destination="${argument#*=}" ;;
     original|cross_city|short_open|narrow_corridor|low_collision|delivery|surface_delivery)
       if [[ "$case_set" == true ]]; then echo 'Specify only one case.'; exit 2; fi
       case_name="$argument"; case_set=true ;;
-    *) echo 'Usage: bash scripts/run_funnel_physics.sh [original|cross_city|short_open|narrow_corridor|low_collision|delivery|surface_delivery] [--software] [--show-surface]'; exit 2 ;;
+    *) echo 'Usage: bash scripts/run_funnel_physics.sh [original|cross_city|short_open|narrow_corridor|low_collision|delivery|surface_delivery] [--software] [--show-surface] [--destination=g1|g2|g3]'; exit 2 ;;
   esac
 done
+if [[ -n "$destination" && "$case_name" != surface_delivery ]]; then
+  echo '--destination requires surface_delivery.'; exit 2
+fi
 output_dir=generated/funnel_physics
 world_name=funnel_physics
 if [[ "$case_name" != original ]]; then
   output_dir="$output_dir/$case_name"
   world_name="${world_name}_$case_name"
+fi
+if [[ -n "$destination" ]]; then
+  output_dir="generated/city_three_goals/$destination"
+  world_name="${world_name}_$destination"
 fi
 command -v gz >/dev/null || { echo 'Gazebo is not available in this terminal.'; exit 1; }
 /usr/bin/python3 -c 'from gz.sim8 import Model, Link; from gz.math7 import Vector3d'
@@ -27,6 +36,7 @@ planner_python=python3
 if [[ -x .venv/bin/python ]]; then planner_python=.venv/bin/python; fi
 prepare_options=(--case "$case_name")
 if [[ "$show_surface" == true ]]; then prepare_options+=(--show-surface); fi
+if [[ -n "$destination" ]]; then prepare_options+=(--destination "$destination"); fi
 "$planner_python" tools/prepare_funnel_physics.py "${prepare_options[@]}"
 export GZ_SIM_RESOURCE_PATH="$PWD/generated/funnel_preview:$PWD/generated/funnel_physics${GZ_SIM_RESOURCE_PATH:+:$GZ_SIM_RESOURCE_PATH}"
 export GZ_SIM_SYSTEM_PLUGIN_PATH="$PWD/src${GZ_SIM_SYSTEM_PLUGIN_PATH:+:$GZ_SIM_SYSTEM_PLUGIN_PATH}"
