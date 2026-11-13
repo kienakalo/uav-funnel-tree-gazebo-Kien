@@ -22,6 +22,7 @@ Thumbs.db
 # profiling dumps, runtime packages and large propagation caches stay local.
 /generated/**
 !/generated/**/
+!/generated/README.md
 !/generated/funnel_input_y2p00.geom
 !/generated/funnel_route_candidate_y2p00.json
 !/generated/funnel_route_candidate_validation_y2p00.json

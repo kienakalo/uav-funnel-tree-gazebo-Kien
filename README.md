@@ -183,14 +183,18 @@ cần lập lại kế hoạch tương ứng. Khi thay đổi cả pipeline mi�
 | `tools/prepare_city_visual.py` | Phân màu hình học thành phố |
 | `tools/compare_surface_geodesic.py` | Đối chiếu với MMP qua pygeodesic |
 | `tools/analyze_surface_delivery.py` | Kiểm tra telemetry trên lưới 3D |
+| `tests/` | Kiểm thử cắt tỉa, phạm vi đích và gọi dịch vụ pose |
+| `tools/dev/` | Công cụ khảo sát và bảo trì của các giai đoạn trước |
 | `scripts/` | Cài đặt và mở mô phỏng |
 | `assets/city.glb` | Mô hình thành phố kèm nguồn và giấy phép |
 | `data/input`, `data/expected` | Năm mesh mẫu và dữ liệu đối chiếu |
 | `generated/` | Bộ dữ liệu đã kiểm tra và các kết quả sinh ra |
 
-`RUNBOOK_CURRENT.md` là hướng dẫn vận hành chi tiết. Nhóm lưu quy trình khảo
-sát mặt cắt, dựng miền dẫn đường phẳng và thử nghiệm đô thị V3 trong các
-README dạng `.txt` để đối chiếu giữa các giai đoạn.
+`RUNBOOK_CURRENT.md` là hướng dẫn vận hành chi tiết.
+Các hướng dẫn khảo sát và phương án trước được lưu trong
+[tài liệu thử nghiệm](docs/experiments/README.md).
+Mục lục [dữ liệu và kết quả](generated/README.md) phân biệt bộ demo hiện tại,
+các thí nghiệm đã lưu và dữ liệu chạy tạm.
 
 ## Phạm vi kết quả
 

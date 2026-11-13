@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """Run the Procedure 2 unit tests."""
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from funnel_clip import _self_test
 
 if __name__ == "__main__":
