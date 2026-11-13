@@ -53,7 +53,7 @@ elif new in source:
 else:
     raise SystemExit(
         "Expected code block not found exactly. No file was changed. "
-        "Please send the current section around 'psv = angle_sides'."
+        "Inspect the local code around 'psv = angle_sides' before applying this patch."
     )
 
 print("Syntax check: PASS")
