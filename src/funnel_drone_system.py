@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
 # Main libraries: Gazebo Harmonic bindings via the local drone_system module;
 # hashlib, json, os, pathlib (Python standard library).
 """Force-driven Funnel route tracking using the existing 1 kg point-mass PD model."""

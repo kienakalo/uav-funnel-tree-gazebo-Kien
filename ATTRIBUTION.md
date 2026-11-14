@@ -1,3 +1,10 @@
+# Project code
+
+Original code contributed to this project is licensed under BSD-3-Clause;
+see LICENSE. This grant covers the contributors' own work and does not
+relicense third-party software, reference implementations, papers, or assets.
+Third-party components retain their original notices and license terms.
+
 # City asset
 
 Title: Ho Chi Minh City 2025 - Thành Phố Hồ Chí Minh

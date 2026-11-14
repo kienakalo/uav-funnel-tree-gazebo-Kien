@@ -282,6 +282,17 @@ các thí nghiệm đã lưu và dữ liệu chạy tạm.
   chọn. Đối chiếu thành công cho ca hiện tại chưa chứng minh bản cài đặt
   đúng trên mọi lưới.
 
+## Giấy phép
+
+Phần mã nguồn do nhóm đóng góp được phát hành theo **BSD-3-Clause**, xem
+[LICENSE](LICENSE). Thông báo bản quyền dùng tên chung
+`uav-funnel-tree-gazebo contributors` cho các tác giả đóng góp mã nguồn.
+
+Giấy phép này không thay thế giấy phép của thư viện, mã bên thứ ba hay dữ
+liệu được sử dụng trong dự án. Mô hình thành phố và các bản chuyển đổi của
+nó giữ giấy phép **CC BY 4.0**, với thông tin nguồn trong
+[ATTRIBUTION.md](ATTRIBUTION.md). Giấy phép bản thảo bài báo được quyết định riêng.
+
 ## Tài liệu tham khảo
 
 Thuật toán dựa trên bài báo của Phan Thanh An, Tran Van Hoai và Vuong Ba Thinh,

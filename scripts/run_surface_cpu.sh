@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
 # Main runtime: Bash, Python + NumPy/Shapely, Gazebo Harmonic (gz.sim8/gz.math7).
 # Analysis uses Matplotlib; MMP verification uses pygeodesic independently.
 # Python dependency versions: requirements-demo.txt and requirements-reference.txt.

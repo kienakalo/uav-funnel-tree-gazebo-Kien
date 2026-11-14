@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
 # Main libraries: NumPy (telemetry/mesh arrays), Shapely (spatial queries),
 # Matplotlib (plots); csv, hashlib, json, pathlib (Python standard library).
 """Check measured tracking against the actual non-flat navigation mesh."""

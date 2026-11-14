@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
 # Main libraries: math (Python standard library).
 # Quintic time parameterization and feedforward + PD are implemented locally.
 """Time parameterization on the existing polyline; does not change path planning."""
