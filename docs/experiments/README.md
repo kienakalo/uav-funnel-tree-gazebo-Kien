@@ -6,10 +6,10 @@ phát triển. Hướng dẫn chạy demo bám bề mặt 3D hiện tại nằm 
 
 | Tài liệu | Nội dung |
 | --- | --- |
-| [Khảo sát cao độ](README.txt) | Phân tích cao độ mô hình thành phố |
-| [Miền dẫn đường](README_NAVIGATION.txt) | Thử nghiệm dựng miền dẫn đường phẳng |
-| [Mặt cắt](README_SLICE.txt) | Thử nghiệm mặt cắt mô hình |
-| [Đô thị V3](README_URBAN_V3.txt) | Quy trình thử nghiệm đô thị V3 |
+| [Khảo sát cao độ](height-survey.md) | Phân tích cao độ mô hình thành phố |
+| [Miền dẫn đường](navigation-surface.md) | Thử nghiệm dựng miền dẫn đường phẳng |
+| [Mặt cắt](flight-slice.md) | Thử nghiệm mặt cắt mô hình |
+| [Đô thị V3](urban-v3.md) | Quy trình thử nghiệm đô thị V3 |
 
 Mọi lệnh trong các tài liệu này chạy từ thư mục gốc repository. Một số
 bước cần dữ liệu trung gian hoặc thư viện khảo sát ngoài bộ cài demo hiện tại.

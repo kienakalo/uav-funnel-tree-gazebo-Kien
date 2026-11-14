@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: NumPy, trimesh; Python stdlib (collections, csv, pathlib).
 import csv
 import numpy as np
@@ -7,7 +7,7 @@ import trimesh
 from collections import defaultdict
 from pathlib import Path
 
-CITY = Path("data/input/city.glb")
+CITY = Path("data/source/city.glb")
 OUT = Path("generated")
 OUT.mkdir(exist_ok=True)
 

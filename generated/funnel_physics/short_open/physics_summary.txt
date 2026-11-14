@@ -19,5 +19,5 @@ Kiem tra hinh hoc ap dung cho tam drone va doan thang noi cac mau CSV; khong pha
 Don vi mo phong duoc chuan hoa tu asset, chua phai du lieu dia ly do dac.
 Chua chung nhan tuyen ngan nhat toan cuc.
 
-Route SHA256: 7d50fb2185736dbcf8b08ab41ef0a2a9865c10d4deff5c6daea6e990bf95ebcd
-Telemetry SHA256: 9d903c44f4f5bf40ccafca16cd60a3b16ac094787086e78acd4e04187227d4c0
+Route SHA256: 7d77ab074936eed7f560c3060f875e0590eb9161ba8cf46247e3b7f31fe7b94d
+Telemetry SHA256: 56b4d99bc2e360f434fdecc090b154449b88a04e3852ac496020faf403664ceb

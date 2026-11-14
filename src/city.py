@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: NumPy (geometry arrays); json, struct, pathlib (Python stdlib).
 # This GLB reader does not require trimesh; older survey tools use it separately.
 """Load this GLB's uncompressed triangle primitives and bake scene transforms."""

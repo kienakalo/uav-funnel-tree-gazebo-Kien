@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Python stdlib (json, math, pathlib, subprocess, sys, xml); local modules
 # (city, prepare, urban_navigation).
 """Prepare a lower-altitude, obstacle-aware mission using existing city assets."""
@@ -16,7 +16,7 @@ from prepare import shape
 def main():
     baseline=subprocess.run([sys.executable,str(ROOT/'prepare.py'),'--mode','physics'],cwd=ROOT,capture_output=True,text=True)
     if baseline.returncode:raise RuntimeError(baseline.stdout+baseline.stderr)
-    vertices,faces,_=load_city(ROOT/'assets/city.glb')
+    vertices,faces,_=load_city(ROOT/'data/source/city.glb')
     mesh,path,report,blocked,origin=plan_urban(vertices,faces)
     out=ROOT/'generated'
     route={'waypoints':path,'speed':3.,'surface':'open triangulated obstacle-free grid corridor at constant altitude',

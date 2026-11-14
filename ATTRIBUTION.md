@@ -5,7 +5,25 @@ see LICENSE. This grant covers the contributors' own work and does not
 relicense third-party software, reference implementations, papers, or assets.
 Third-party components retain their original notices and license terms.
 
+# Authors
+
+Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang, Ho Chi Minh City University of
+Technology (HCMUT).
+
+# Example meshes
+
+The five `.geom` meshes in `data/input/` and the expected paths and reference
+values in `data/expected/` were created by the project authors. They are
+first-party data, not third-party test sets, and are released under
+BSD-3-Clause together with the project code.
+
 # City asset
+
+Location in this repository: `data/source/city.glb`. The asset is a pipeline
+input that the preparation scripts read to build the city STL, navigation
+surface and flight slice, so it is stored under `data/` rather than in a
+separate asset directory. Its third-party origin is recorded here and in the
+file metadata instead of being implied by the directory name.
 
 Title: Ho Chi Minh City 2025 - Thành Phố Hồ Chí Minh
 

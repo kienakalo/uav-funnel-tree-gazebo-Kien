@@ -10,7 +10,7 @@ Chạy từ thư mục gốc repository vì các đường dẫn dữ liệu đ�
   mã nguồn hiện tại đã có sửa đổi này.
 
 Một số công cụ khảo sát cũ dùng `trimesh` và đường dẫn
-`data/input/city.glb`. Khi sử dụng lại, cần cung cấp mô hình ở đường dẫn đó
+`data/source/city.glb`. Khi sử dụng lại, cần cung cấp mô hình ở đường dẫn đó
 hoặc điều chỉnh biến `CITY` theo dữ liệu khảo sát. Không cần chạy các công
 cụ này để mở demo bám bề mặt.
 

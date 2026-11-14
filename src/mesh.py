@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Python stdlib (dataclasses, math, pathlib).
 """Bước 1: dữ liệu bề mặt và các phép tính hình học; chưa tính đường đi."""
 from dataclasses import dataclass, field

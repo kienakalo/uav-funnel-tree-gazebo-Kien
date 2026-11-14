@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: NumPy; Python stdlib (hashlib, json, math, pathlib, sys, xml); local modules
 # (city, mesh, prepare, verification).
 """Export the validated candidate and matching city into a separate pose-preview world."""
@@ -57,10 +57,9 @@ def main():
         raise ValueError("Mesh or candidate changed since validation; validate again")
     candidate = json.loads(candidate_path.read_text())
     navigation = json.loads((generated / "navigation_y2p00_report.json").read_text())
-    city_path = next((p for p in (ROOT / "data/input/city.glb", ROOT / "assets/city.glb")
-                      if p.exists() and sha(p) == navigation["sha256"]), None)
-    if city_path is None:
-        raise ValueError("No city asset matches the navigation surface asset hash")
+    city_path = ROOT / "data/source/city.glb"
+    if not city_path.is_file() or sha(city_path) != navigation["sha256"]:
+        raise ValueError("The city asset does not match the navigation surface asset hash")
     model_path = simplify(candidate["points"])
     mesh = read_geom(mesh_path)
     coords = [(p.x, p.y, p.z) for p in mesh.points]

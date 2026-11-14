@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: NumPy, Shapely; Python stdlib (hashlib, heapq, json, math, pathlib, time);
 # local modules (funnel_tree, mesh, prepare_funnel_gazebo, prepare_funnel_physics,
 # run_funnel_benchmark, run_funnel_route).

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main runtime: Bash; local Python/Gazebo scripts and Ubuntu system commands.
 # Python library roles and versions: README.md and requirements*.txt.
 # Gazebo embeds the Ubuntu Python runtime and needs apt-installed gz bindings.

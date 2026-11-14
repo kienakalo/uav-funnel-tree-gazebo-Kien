@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Matplotlib, NumPy, trimesh; Python stdlib (csv, heapq, pathlib).
 
 from pathlib import Path
@@ -13,7 +13,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.collections import PolyCollection
 
-CITY = Path("data/input/city.glb")
+CITY = Path("data/source/city.glb")
 OUT = Path("generated")
 OUT.mkdir(exist_ok=True)
 

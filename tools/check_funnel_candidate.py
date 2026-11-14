@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: NumPy; Python stdlib (hashlib, json, math, pathlib, sys); local modules
 # (mesh, verification).
 """Independently check full segment coverage of the candidate by the mesh."""

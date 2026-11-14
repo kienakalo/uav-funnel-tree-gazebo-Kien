@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Python standard library; NumPy (via src/funnel_tree.py).
 # City/Gazebo workflow: Shapely, Matplotlib, Gazebo Sim 8 / gz.math7;
 # independent MMP reference: pygeodesic (not used by the Funnel planner).
