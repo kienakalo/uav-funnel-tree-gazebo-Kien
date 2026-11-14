@@ -27,6 +27,7 @@ Thumbs.db
 !/generated/source_header_audit.json
 !/generated/paper_figures/gazebo_overview.png
 !/generated/paper_figures/gazebo_delivery.png
+!/generated/paper_figures/gazebo_delivery_annotated.pdf
 !/generated/paper_figures/figure_metadata.json
 !/generated/surface_sensitivity/results.json
 !/generated/surface_sensitivity/summary.md
