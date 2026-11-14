@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Python stdlib (math, pathlib, sys, time); local modules (funnel_tree, mesh).
 """Check diagnostic target filtering against unrestricted propagation."""
 import math

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Matplotlib, NumPy; Python stdlib (argparse, contextlib, csv, hashlib, heapq,
 # io, json, math, os, pathlib, shutil, subprocess, sys, time, xml); local modules
 # (analyze_surface_delivery, compare_surface_geodesic, funnel_tree, mesh,

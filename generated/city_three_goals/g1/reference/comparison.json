@@ -37,5 +37,5 @@
   "formal_arithmetic_certificate": false,
   "general_funnel_implementation_correctness_certified": false,
   "mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
-  "surface_plan_sha256": "0ecca8dcd7f8eee2cd8600c8f06edbba7b03e012b8d3be334c95f750ddd99258"
+  "surface_plan_sha256": "b4107b8fd34fb8dcb2260bab7d01af0bd75afce5e3f93906f41a655c52663dab"
 }

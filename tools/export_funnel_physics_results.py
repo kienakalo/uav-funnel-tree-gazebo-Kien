@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Matplotlib, NumPy; Python stdlib (argparse, csv, hashlib, io, json, pathlib,
 # sys); local modules (analyze_funnel_physics, mesh).
 """Validate recorded physics telemetry and export route/tracking figures and summary."""

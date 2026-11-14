@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Python stdlib (argparse, json, math, pathlib, sys, xml); local modules
 # (city, funnel_tree, mesh).
 """Create offline Gazebo world, city STL, virtual flight mesh and route."""

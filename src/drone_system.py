@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Gazebo Harmonic Python bindings (gz.sim8, gz.math7);
 # csv, json, math, pathlib (Python stdlib); trajectory (local project module).
 """V2: smooth reference, velocity/acceleration feedforward and position feedback.

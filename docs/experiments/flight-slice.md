@@ -1,35 +1,52 @@
-TRÍCH MẶT CẮT THÀNH PHỐ TẠI Y = 2,0
+# Trích mặt cắt thành phố tại Y = 2,0
+
+Tài liệu lịch sử của giai đoạn khảo sát; hướng dẫn hiện tại nằm ở
+[README chính](../../README.md) và [runbook](../../RUNBOOK_CURRENT.md).
 
 Nhóm trích mặt cắt tại cao độ Y = 2 trong hệ tọa độ mô hình gốc.
 Quy trình thực hiện trong Ubuntu 2:
+
+```bash
 cd /mnt/c/DroneDemo/drone_gazebo_demo
 .venv/bin/python tools/build_flight_slice.py --height 2
+```
 
-Script tìm data/input/city.glb trước, rồi assets/city.glb.
+Script tìm `data/input/city.glb` trước, rồi `assets/city.glb`.
 Để chỉ định rõ file:
-.venv/bin/python tools/build_flight_slice.py --height 2 --city assets/city.glb
 
-Kết quả mới trong generated:
-- flight_slice_y2p00.png: mặt cắt nhìn theo mặt phẳng X/Z.
-- flight_slice_y2p00.json: các đỉnh, cạnh và component để xử lý tiếp.
-- flight_slice_y2p00_report.json: thống kê và hệ tọa độ.
+```bash
+.venv/bin/python tools/build_flight_slice.py --height 2 --city assets/city.glb
+```
+
+Kết quả mới trong `generated`:
+
+- `flight_slice_y2p00.png`: mặt cắt nhìn theo mặt phẳng X/Z.
+- `flight_slice_y2p00.json`: các đỉnh, cạnh và component để xử lý tiếp.
+- `flight_slice_y2p00_report.json`: thống kê và hệ tọa độ.
 
 Mở kết quả bằng:
-explorer.exe "$(wslpath -w generated)"
 
-Đã tính trên city.glb gốc: 44 object, 3.584 tam giác crossing, 3.579 đoạn thô,
-3.571 cạnh không trùng, 120 component, 76 component dạng chu trình bậc 2 và
-44 component hở hoặc có nhánh. Kết quả tham chiếu có sẵn trong reference/.
+```bash
+explorer.exe "$(wslpath -w generated)"
+```
+
+Đã tính trên `city.glb` gốc: 44 object, 3.584 tam giác crossing, 3.579 đoạn
+thô, 3.571 cạnh không trùng, 120 component, 76 component dạng chu trình bậc 2
+và 44 component hở hoặc có nhánh. Kết quả tham chiếu có sẵn trong `reference/`.
 Script được thử với tam giác cắt biết trước, tiếp xúc tại đỉnh và các đồ thị
 đường bao kín/hở đơn giản, đồng thời chạy trên toàn bộ mô hình thành phố.
 
-MÀU SẮC
-Xanh: component có tất cả đỉnh bậc 2, ứng viên đường bao kín.
-Cam: component hở hoặc có nhánh, cần kiểm tra trước khi tạo polygon.
-Xám nhạt: hình chiếu lấy mẫu của thành phố để định hướng, không phải vùng bay.
+## Màu sắc
 
-GIỚI HẠN
-- Y-up và đơn vị scene GLB gốc; không đổi trục hoặc scale Gazebo, chưa xác nhận mét.
+- **Xanh:** component có tất cả đỉnh bậc 2, ứng viên đường bao kín.
+- **Cam:** component hở hoặc có nhánh, cần kiểm tra trước khi tạo polygon.
+- **Xám nhạt:** hình chiếu lấy mẫu của thành phố để định hướng, không phải vùng
+  bay.
+
+## Giới hạn
+
+- Y-up và đơn vị scene GLB gốc; không đổi trục hoặc scale Gazebo, chưa xác nhận
+  mét.
 - Điểm đầu/cuối được gộp bằng lượng tử hóa 1e-5 đơn vị; số component có thể phụ
   thuộc ngưỡng. Đây không phải sửa topology chính xác theo mọi khoảng cách.
 - Chu trình bậc 2 chưa đảm bảo polygon đơn, không tự cắt, không lồng nhau hoặc
@@ -41,4 +58,4 @@ GIỚI HẠN
 - Không thay route/world Gazebo cũ và không sửa file bản đồ gốc.
 
 Phụ thuộc: NumPy và Matplotlib trong môi trường phân tích đang dùng.
-Các thư viện phân tích được khai báo trong requirements-demo.txt.
+Các thư viện phân tích được khai báo trong `requirements-demo.txt`.

@@ -10,7 +10,7 @@
   ],
   "max_vertical_surface_deviation": 0.0008566326163759186,
   "min_sampled_city_clearance_under_body": 1.1000000882238945,
-  "route_sha256": "112723faa2a99bafaf907db309322f131bbe7f2feac858a942d716201db1e9c6",
+  "route_sha256": "20ad7db90f402c53698d1ca76db1ae139d6c14d942c11a3d2a5316e4753e811d",
   "telemetry_sha256": "c01a71b4a01cac83a98581f77dc7f783b0a77267c60bd528aaeb6cebc91c5d18",
   "surface_mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
   "scope": "measured point-mass trajectory against the 3D mesh and city triangle AABBs under the body footprint"

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: Python stdlib (math, pathlib, sys); local modules (funnel_tree, mesh).
 """Independent analytic shortest-path check on an L-shaped open mesh."""
 import math,sys

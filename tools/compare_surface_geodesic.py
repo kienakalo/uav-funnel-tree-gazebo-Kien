@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
-# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Copyright (c) 2026, Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang
 # Main libraries: NumPy; pygeodesic (independent exact MMP reference only);
 # hashlib, importlib.metadata, json, math, pathlib, time (Python stdlib).
 # Funnel candidates are computed separately by the local Funnel Tree code.
