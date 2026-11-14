@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (pathlib).
 """Safely correct the two angle roles in src/funnel_tree.py.
 
 The funnel-tree code needs:

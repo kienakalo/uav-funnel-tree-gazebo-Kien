@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main runtime: Bash; local Python/Gazebo scripts and Ubuntu system commands.
+# Python library roles and versions: README.md and requirements*.txt.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 if [[ $# -gt 1 || ( $# -eq 1 && "$1" != --software ) ]]; then

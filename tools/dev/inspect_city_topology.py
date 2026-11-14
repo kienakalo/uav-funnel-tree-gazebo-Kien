@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy, trimesh; Python stdlib (csv, pathlib).
 from pathlib import Path
 import csv
 import numpy as np

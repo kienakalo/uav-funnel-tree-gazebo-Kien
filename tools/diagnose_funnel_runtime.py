@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (argparse, cProfile, faulthandler, io, json, math, pathlib,
+# pstats, subprocess, sys, time); local modules (funnel_tree, mesh).
 """Profile one START propagation, without changing the solver or Gazebo route."""
 import argparse
 import cProfile

@@ -1,3 +1,10 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy; Python stdlib (argparse, contextlib, csv, hashlib, heapq,
+# io, json, math, os, pathlib, shutil, subprocess, sys, time, xml); local modules
+# (analyze_surface_delivery, compare_surface_geodesic, funnel_tree, mesh,
+# plan_funnel_delivery, prepare_funnel_gazebo, run_funnel_benchmark, run_funnel_route,
+# trajectory).
 """Three independent surface routes from one fixed START on an identical city mesh."""
 import argparse
 import contextlib

@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy; Python stdlib (argparse, hashlib, heapq, json, math,
+# pathlib, sys, time); local modules (funnel_tree, mesh, run_funnel_route, verification).
 """Four reproducible route tests on one mesh, with a shared resumable Funnel cache.
 
 This tests planning and geometric coverage, not Gazebo flight or global

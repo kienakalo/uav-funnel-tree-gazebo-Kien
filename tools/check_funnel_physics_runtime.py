@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (argparse, json, os, pathlib, signal, subprocess, time, xml).
 """Run accelerated headless force-feedback tracking and save real telemetry."""
 import json
 import argparse

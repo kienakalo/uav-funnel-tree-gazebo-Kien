@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy; Python stdlib (collections, json, pathlib).
 """Mesh adjacency helpers and a validation check for Funnel Tree level 1.
 
 Run from the project root:

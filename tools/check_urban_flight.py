@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (csv, json, pathlib, sys); local modules (city, trajectory,
+# urban_navigation).
 """Check measured centreline against the same conservative obstacle columns."""
 import csv,json,sys
 from pathlib import Path

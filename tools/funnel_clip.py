@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (math, typing).
 """Procedure 2: Clip off Funnels (decision logic from the paper).
 
 Angles are in radians.  A and B are two funnels F_{p,q,S} and F_{p,q,S1}

@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy; Python stdlib (argparse, hashlib, json, math, pathlib);
+# local modules (inspect_flight_levels_fixed).
 """Intersect city triangles with original-scene Y=h and audit contour topology.
 
 Open or branched contours are reported, not silently closed into obstacles.

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy; Python stdlib (argparse, csv, hashlib, json, pathlib, struct).
 """Inspect original GLB scene Y levels. No Gazebo axis conversion or rescaling.
 
 Only numpy is required. This reader supports this asset's uncompressed GLB2

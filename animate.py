@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (argparse, csv, json, math, pathlib, re, shutil, subprocess,
+# sys, time).
 """Pose preview: send position commands, without physical flight control."""
 import argparse,csv,json,math,re,shutil,subprocess,sys,time
 from pathlib import Path

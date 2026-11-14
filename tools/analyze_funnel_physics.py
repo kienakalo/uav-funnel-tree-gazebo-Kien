@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy; Python stdlib (argparse, csv, hashlib, json, math, pathlib, sys);
+# local modules (inspect_flight_levels_fixed, urban_navigation).
 """Check measured Funnel tracking and segment intersections with conservative columns."""
 import csv
 import argparse

@@ -45,7 +45,7 @@
         ],
         "max_vertical_surface_deviation": 0.0008566326163759186,
         "min_sampled_city_clearance_under_body": 1.1000000882238945,
-        "route_sha256": "94bcafcbdd4776f50ded9a258d403441edf0b9b59b305a52e54467602fc6a40f",
+        "route_sha256": "112723faa2a99bafaf907db309322f131bbe7f2feac858a942d716201db1e9c6",
         "telemetry_sha256": "c01a71b4a01cac83a98581f77dc7f783b0a77267c60bd528aaeb6cebc91c5d18",
         "surface_mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
         "scope": "measured point-mass trajectory against the 3D mesh and city triangle AABBs under the body footprint"
@@ -85,7 +85,7 @@
         ],
         "max_vertical_surface_deviation": 0.0009776669828305273,
         "min_sampled_city_clearance_under_body": 1.099997544831015,
-        "route_sha256": "62b9f545b8be580973edb9cc972b6e54ff07983d6f55c2635b667c2fc2f39417",
+        "route_sha256": "919f9bc1244632ccaaeb8b5d87cc27bc02a2ceab544f48345967257cf6dd2903",
         "telemetry_sha256": "40a1c2847135eb2f483000db4796716b5c062748392453cbf6d75405d32e1cbf",
         "surface_mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
         "scope": "measured point-mass trajectory against the 3D mesh and city triangle AABBs under the body footprint"
@@ -125,7 +125,7 @@
         ],
         "max_vertical_surface_deviation": 0.0007744525681463443,
         "min_sampled_city_clearance_under_body": 1.1000006664422646,
-        "route_sha256": "99c5be4dd7f64b5d2b866a5eb76fc19d5023e8b990facc754ac5011966546d9c",
+        "route_sha256": "af1fcccbd1584c9bc4fb72bbe683d902bd2fe087ee47af5b0291ba4228b55764",
         "telemetry_sha256": "399ff34c9fbaadbdcf914992b4177a8d50354c0b13d75614dbeec4fffba81abe",
         "surface_mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
         "scope": "measured point-mass trajectory against the 3D mesh and city triangle AABBs under the body footprint"

@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (json, math, pathlib, subprocess, sys, xml); local modules
+# (city, prepare, urban_navigation).
 """Prepare a lower-altitude, obstacle-aware mission using existing city assets."""
 import json,math,subprocess,sys
 from pathlib import Path

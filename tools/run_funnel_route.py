@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (argparse, hashlib, heapq, json, math, pathlib, sys, time);
+# local modules (funnel_tree, mesh).
 """Build a candidate route through secondary Funnel sources, with resumable runs.
 
 Graph edges come only from reconstructed Funnel propagation results. The

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (csv, math, pathlib).
 """Read Gazebo's actual CSV, preserving moving/hold distinction when available."""
 import csv,math
 from pathlib import Path

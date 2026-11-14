@@ -1,7 +1,7 @@
 {
   "method": "polygon visibility graph over all non-collinear boundary corners and endpoints",
   "mesh_sha256": "9b4bccb95593239193a316d6fe139770439e5e34f5dcb19bafed617d735c1857",
-  "benchmark_signature": "9be41981e0fadad77a277bd65f22e0ba0d44b9b35be6ac4d8692e6c4ed8f887e",
+  "benchmark_signature": "748482f6645e91f1aa3999a721311dfd1c2126d180662fd92bde9a23018040dd",
   "domain_area": 1919.5,
   "holes": 6,
   "graph_vertices": 244,
@@ -47,7 +47,7 @@
           -44.85
         ]
       ],
-      "funnel_route_sha256": "23a8c5a2f4d8ddfa43a93dfeb26e81f80a5f2e2b290f1d87acf84a9d472788a6"
+      "funnel_route_sha256": "9d3d25d24034f835b5772845c9f826b4b558b6404fc64315935e94f0396faeb8"
     },
     {
       "case": "short_open",
@@ -69,7 +69,7 @@
           -8.166666666666666
         ]
       ],
-      "funnel_route_sha256": "a61f2ab4355464aff06efd5cfee60a2571120fc93d5dc681736106f2d3ecc048"
+      "funnel_route_sha256": "cda4cfae2adc19ea3fb778219b4320c914d8d9d3a5602c8a738567677801db82"
     },
     {
       "case": "cross_city",
@@ -107,7 +107,7 @@
           -20.166666666666668
         ]
       ],
-      "funnel_route_sha256": "3919033f5871ffa97bbb16190d7272b307e807ec85e9b352f4f63bf11a847d94"
+      "funnel_route_sha256": "1e366eba1f4da7a9866b9ccf29d1c77141a82510186bffc56c621b179830188e"
     },
     {
       "case": "narrow_corridor",
@@ -129,7 +129,7 @@
           -27.833333333333332
         ]
       ],
-      "funnel_route_sha256": "408a793b983ef5e1cdc9e8689e51806d456cb9ba3d5a76491c5b722897d3cb7f"
+      "funnel_route_sha256": "6b7809fa078b37c2cf434f452b727987106ae3601052f0a49c114d34ad1f34f6"
     }
   ],
   "all_match_reference": true,

@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (json, math, pathlib, sys, time); local modules (funnel_tree,
+# mesh, verification).
 """Regression and geometric checks; does not certify arbitrary-mesh optimality."""
 import json,math,sys,time
 from pathlib import Path

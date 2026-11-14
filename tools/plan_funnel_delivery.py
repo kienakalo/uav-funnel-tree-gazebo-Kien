@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy, Shapely; Python stdlib (hashlib, heapq, json, math, pathlib, time);
+# local modules (funnel_tree, mesh, prepare_funnel_gazebo, prepare_funnel_physics,
+# run_funnel_benchmark, run_funnel_route).
 """Find the farthest feasible delivery vertex and connect it with Funnel paths."""
 import hashlib
 import heapq

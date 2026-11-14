@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (hashlib, json, pathlib, sys).
 """Check consistency of the saved planning, tracking and reference evidence.
 
 This is an artifact/hash consistency check. It does not rerun Gazebo, the

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy; Python stdlib (collections, json, pathlib).
 from pathlib import Path
 from collections import defaultdict, deque
 import json

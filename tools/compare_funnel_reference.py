@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy, Shapely; Python stdlib (hashlib, heapq, json, math,
+# pathlib, sys, time); local modules (mesh).
 """Compare Funnel candidates with an independent planar polygon visibility graph.
 
 Visibility edges use the unexpanded union of navigation triangles and every

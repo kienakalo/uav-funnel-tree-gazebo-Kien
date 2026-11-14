@@ -23,6 +23,7 @@ Thumbs.db
 /generated/**
 !/generated/**/
 !/generated/README.md
+!/generated/source_header_audit.json
 !/generated/funnel_input_y2p00.geom
 !/generated/funnel_route_candidate_y2p00.json
 !/generated/funnel_route_candidate_validation_y2p00.json

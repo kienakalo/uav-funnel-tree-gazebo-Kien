@@ -92,10 +92,16 @@ cache; không diễn giải các lượt nối tiếp này là phép so sánh co
 | Thư viện chuẩn Python | `math`, `json`, `csv`, `pathlib`, `hashlib`, `heapq`, `argparse`, `xml.etree.ElementTree` và các tiện ích hệ thống |
 | trimesh | Công cụ khảo sát cũ trong `tools/dev/`, không bắt buộc cho lệnh chạy demo hiện tại |
 
-Các file chạy demo, điều khiển và phân tích ghi thư viện chính ở phần đầu
-mã nguồn. `requirements-demo.txt` và `requirements-reference.txt` lưu các
+Toàn bộ mã Python của nhóm ở thư mục gốc, `src/`, `tools/`, `tests/` và các
+script trong `scripts/` có thông báo BSD-3-Clause cùng thư viện hoặc runtime
+chính ở phần đầu. Module nội bộ được ghi riêng với thư viện bên ngoài.
+`requirements-demo.txt` và `requirements-reference.txt` lưu các
 phiên bản đã dùng; một thư viện có trong bộ cài không đồng nghĩa mọi module
 đều sử dụng nó. Gazebo dùng Python bindings cài qua hệ thống Ubuntu.
+
+[Biên bản rà soát header](generated/source_header_audit.json) ghi nhận các
+file đã kiểm tra. Việc bổ sung chú thích giữ nguyên cấu trúc thực thi Python;
+các dấu vân tay phụ thuộc mã nguồn được cập nhật, không tính lại số liệu bay.
 
 - Ubuntu 24.04, hoặc Ubuntu 24.04 trên WSL2 với WSLg để mở giao diện.
 - Gazebo Harmonic / Gazebo Sim 8 và Python bindings của hệ thống.

@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy; Python stdlib (csv, hashlib, io, json, pathlib,
+# subprocess, sys).
 """Revalidate and compare four recorded point-mass tracking experiments."""
 import csv
 import hashlib

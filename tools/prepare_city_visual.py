@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy; Python stdlib (hashlib, json, pathlib).
 """Colour the existing city geometry by height and face orientation."""
 import hashlib
 import json

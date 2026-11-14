@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy; Python stdlib (argparse, collections, hashlib, json,
+# pathlib); local modules (inspect_flight_levels_fixed).
 """Build a conservative grid navigation surface in original GLB scene units.
 
 Uses all upper triangle projections, not guessed closures of broken contours.

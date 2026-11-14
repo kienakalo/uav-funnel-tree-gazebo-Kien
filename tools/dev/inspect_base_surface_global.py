@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy, trimesh; Python stdlib (csv, gc, pathlib).
 
 import csv
 import gc

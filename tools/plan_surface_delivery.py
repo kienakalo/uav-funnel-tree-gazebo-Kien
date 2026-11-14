@@ -1,3 +1,8 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy, Shapely; Python stdlib (argparse, hashlib, heapq, json, math,
+# pathlib, sys, time); local modules (build_navigation_surface, city, funnel_tree, mesh,
+# prepare_funnel_gazebo, prepare_funnel_physics, run_funnel_benchmark, run_funnel_route).
 """Build a safe 3D polyhedral envelope and run Funnel propagation on that surface."""
 import argparse
 import hashlib

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Matplotlib, NumPy; Python stdlib (json, pathlib, sys); local modules (mesh).
 """Plot the candidate route in the original X/Z navigation coordinates."""
 import json
 from pathlib import Path

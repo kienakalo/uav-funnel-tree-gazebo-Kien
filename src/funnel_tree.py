@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: NumPy; Python stdlib (dataclasses, math, time).
 """Experimental Funnel Tree: local cosine propagation + Procedure 2.
 
 Reconstruction unfolds only the selected face strip, independently of propagation.

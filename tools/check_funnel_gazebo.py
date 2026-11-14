@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (argparse, csv, json, math, os, pathlib, signal, subprocess,
+# sys, time).
 """Check SDF, pose commands and measured Gazebo poses in an isolated headless world."""
 import argparse
 import csv

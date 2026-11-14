@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2026, uav-funnel-tree-gazebo contributors
+# Main libraries: Python stdlib (pathlib, subprocess, sys, unittest); local modules (animate).
 """Regression checks for transient and persistent set_pose failures."""
 from pathlib import Path
 import subprocess
