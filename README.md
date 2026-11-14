@@ -269,10 +269,10 @@ uav-funnel-tree-gazebo/
 ├── prepare_urban.py           # Dựng nhiệm vụ đô thị thấp, tránh vật cản
 ├── offline_validation.json    # Kết quả tích phân số ngoài Gazebo
 ├── reference_fixed.json       # Số liệu tham chiếu mặt cắt Y = 2
-├── assets/
-│   └── city.glb               # Mô hình thành phố (CC BY 4.0)
 ├── data/
-│   ├── input/                 # Năm mesh mẫu .geom
+│   ├── source/                # Mô hình thành phố gốc của bên thứ ba (CC BY 4.0)
+│   │   └── city.glb
+│   ├── input/                 # Năm mesh mẫu .geom do nhóm tạo
 │   └── expected/              # Dữ liệu đối chiếu cho từng mesh
 ├── docs/
 │   └── experiments/           # Ghi chép các giai đoạn khảo sát trước
@@ -342,8 +342,8 @@ uav-funnel-tree-gazebo/
 | `tests/` | Kiểm thử cắt tỉa, phạm vi đích và gọi dịch vụ pose |
 | `tools/dev/` | Công cụ khảo sát và bảo trì của các giai đoạn trước |
 | `scripts/` | Cài đặt và mở mô phỏng |
-| `assets/city.glb` | Mô hình thành phố kèm nguồn và giấy phép |
-| `data/input`, `data/expected` | Năm mesh mẫu và dữ liệu đối chiếu |
+| `data/source/city.glb` | Mô hình thành phố gốc của bên thứ ba, kèm nguồn và giấy phép |
+| `data/input`, `data/expected` | Năm mesh mẫu do nhóm tạo và dữ liệu đối chiếu |
 | `generated/` | Bộ dữ liệu đã kiểm tra và các kết quả sinh ra |
 
 `RUNBOOK_CURRENT.md` là hướng dẫn vận hành chi tiết.

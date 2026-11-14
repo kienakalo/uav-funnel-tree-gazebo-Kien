@@ -27,13 +27,13 @@
     {
       "path": "prepare.py",
       "old_sha256": "ad0dd3cdf970affc6bac5792bb7efbf1310de2573f72a7cd43b47a905e96279b",
-      "new_sha256": "469efb9f67062e4d697d78038e77431b12123c7f14312a70beb844804a1ad9cd",
+      "new_sha256": "83b4d5effa2012e4ac9dc7cf94a306559fc3320bfa72b34804d911c0e491c478",
       "python_ast_unchanged": true
     },
     {
       "path": "prepare_urban.py",
       "old_sha256": "3eb8aaa699bf418a0c393a1b59bf17adbf47681504e42c64ab647c0ca6c8162a",
-      "new_sha256": "3addea8f3d7a476865c19fca8f2a7fe536c1dcb4f942bd261868b14d545352d7",
+      "new_sha256": "47941ac226edb8e1c87156f2f7dd431d69843f8791b7971d8ea9944a102210df",
       "python_ast_unchanged": true
     },
     {
@@ -87,7 +87,7 @@
     {
       "path": "tools/analyze_funnel_physics.py",
       "old_sha256": "a34cf5f0afca9ce56a89c097fa1fa38076e195ee14144e8aad84c04bd5ee450d",
-      "new_sha256": "5e1d94387ec753bbc8d921720165cacb62a00ea96050f11bdb91e18dc2a4ccd5",
+      "new_sha256": "904ca0aa28bfd298ac73edb400d59fee9c20449fe598513cbad0e647b4cb53ae",
       "python_ast_unchanged": true
     },
     {
@@ -105,7 +105,7 @@
     {
       "path": "tools/build_flight_slice.py",
       "old_sha256": "889dae462b505c30e6a644ae1e90f451c406b1ff5935745ff9c50c87135a61de",
-      "new_sha256": "67a1e55d73e2fad3cec849bb3dd136591ee1261a85061cc105021f4ee2cedf98",
+      "new_sha256": "fdd5328d6d1dd7304bd638451205f7b29ef81e062277ae5fede50b2bbca88ad0",
       "python_ast_unchanged": true
     },
     {
@@ -123,7 +123,7 @@
     {
       "path": "tools/build_navigation_surface.py",
       "old_sha256": "10e1cf57e43dbbd56c8f9cc66a30ce1291f2580b2342245015c1afe72a1a253c",
-      "new_sha256": "b323473a70ad6ed3865450af7d4f218e42cd5cdd2ced6a581db0d3bc7fff7515",
+      "new_sha256": "fc2851d3581f00022dc48cdb0e3f7ab6cbd61985db3d86b4907bbcf9647e506b",
       "python_ast_unchanged": true
     },
     {
@@ -159,7 +159,7 @@
     {
       "path": "tools/check_urban_flight.py",
       "old_sha256": "5a58187f788fccba67824f2664b8d159d8b39a6719561e23a21d8d2036091d63",
-      "new_sha256": "2bee3397f39d17a18322b8411ff90c7ad38155888e48f1f5060f3130b9addeb4",
+      "new_sha256": "356495567740492e2866ebb15380be55811e1b575518a3a77b97f247430a870c",
       "python_ast_unchanged": true
     },
     {
@@ -177,13 +177,13 @@
     {
       "path": "tools/dev/extract_city_components.py",
       "old_sha256": "2e78e5565d10f74e36fe666a075546fc79a84db8271bba8426576f34c01a811a",
-      "new_sha256": "f452226159f3f23f392e374b671d2d14eb5e366c31809b6067e87680671f69e3",
+      "new_sha256": "35f44ab6cb664e128513f055c54a993607837eace515c3b3f5b45971b9882307",
       "python_ast_unchanged": true
     },
     {
       "path": "tools/dev/extract_city_components_safe.py",
       "old_sha256": "3464429a78d4290b5a66def28b4d861b03592b1765703bcc1dd9091246504401",
-      "new_sha256": "59b7b78e9f2546074ba64d314a767a5a1cda17fef68f88cdeffadf916d49ea76",
+      "new_sha256": "471799579bba31965c29ea6e003bdbfb24e70acfe7ba8c2577ad4d0181676e09",
       "python_ast_unchanged": true
     },
     {
@@ -195,43 +195,43 @@
     {
       "path": "tools/dev/inspect_base_surface.py",
       "old_sha256": "86b206bf424d59f000bcf7335f97db1932acc738ddaac28ed705508c5f1a645a",
-      "new_sha256": "4fd39a70810d283373b7b7ed118a0afe67b3482e9a4d475a71a8f73a6d2ec2ba",
+      "new_sha256": "114561f65105a8ffa16d1c7423f9ba85c273eb0c496486a13a29ef0ca2e64419",
       "python_ast_unchanged": true
     },
     {
       "path": "tools/dev/inspect_base_surface_global.py",
       "old_sha256": "36ab9a2f31b2b6ef2553a6eb609a3c1b3bf98e384d0f3fa2f32b1650250002c8",
-      "new_sha256": "a0f9cba61ab3bf325b5a9d815ea34130f0c736a09458abd18c2f1b0c5f53c56e",
+      "new_sha256": "6ea4b343d6be5cea3f69b2f082e3d33e9e496a5487be6b16e3a5e694ae48e6f0",
       "python_ast_unchanged": true
     },
     {
       "path": "tools/dev/inspect_city.py",
       "old_sha256": "1e8e5ce72fc4c4b4745d99adfeb3c641c0dc6d74567a04766a8c41b43c87ae7a",
-      "new_sha256": "18c77bbd27682ef986b52217fa5b3603a96b2b02765314a5da1c4a0ae5b9bd51",
+      "new_sha256": "30a9e65787bd91a28cfd61601e9e20ae43e651aa4b56370c3be3f91d79eff4b8",
       "python_ast_unchanged": true
     },
     {
       "path": "tools/dev/inspect_city_topology.py",
       "old_sha256": "8321798fa0b560db6d09f77daf3f4a64c416441c35d6e75ed67d9e60bee4db35",
-      "new_sha256": "0cc3d926b7c7cef8494f15af40015b2b214a09dd566469c3236f039bc2bd9d31",
+      "new_sha256": "9a3355c504e11ab5f4824340f6c17c0ce8eba6d725405679375a4d8010d8ca36",
       "python_ast_unchanged": true
     },
     {
       "path": "tools/dev/inspect_city_welded.py",
       "old_sha256": "5fde2375e185363902fd4b11c15b8a02ef15d843e186c4814dbfc24833a091bc",
-      "new_sha256": "c8e1d5c091a880312443fec1845334176e1245a660f13d745e1a565621e019d8",
+      "new_sha256": "9ad35b7061477dc798c3364dd140ae15d0511a3f1e261d2047adce3343db2e6c",
       "python_ast_unchanged": true
     },
     {
       "path": "tools/dev/inspect_flight_levels.py",
       "old_sha256": "222d3657172e1c0651cf317a16f3d6d2d05c88b19e6c2b52cc6362d8f6678dd8",
-      "new_sha256": "8bdd23976210a4a6ce555e7bac202e21f6c1546ce34250a9a313989c07898e5a",
+      "new_sha256": "d77cf32123de585dc6bbc87265913ba3de2ed1e8603804ecd8033c8eb3f09190",
       "python_ast_unchanged": true
     },
     {
       "path": "tools/dev/inspect_height_levels.py",
       "old_sha256": "1139a0bf1a8e28b0e91c0bc8359ff5242bb200b11a156f205195d647154c39d3",
-      "new_sha256": "b4bfe04100fcf35a74b3dcb2e944064a3b3a901674ba0de95d29bde9ddeefcd2",
+      "new_sha256": "a81004f2f30f6096c595f739a92eda521c45131e4f0693b44c7393333256ccdd",
       "python_ast_unchanged": true
     },
     {
@@ -255,7 +255,7 @@
     {
       "path": "tools/inspect_flight_levels_fixed.py",
       "old_sha256": "5327bd397aced79419f8524c6cebf3fdd12ffe55318f8874f392fc5aeea13e92",
-      "new_sha256": "ba134356facb923a2cf5558ed2fe5b35d728eb95db66be2dd5ea909546ec2f70",
+      "new_sha256": "f6340324fc26eee5f0f0caa2aa98d643be7c328a064a3d911e6e5cd5cfc88162",
       "python_ast_unchanged": true
     },
     {
@@ -285,7 +285,7 @@
     {
       "path": "tools/prepare_funnel_gazebo.py",
       "old_sha256": "a4daa677c9d3a113f634d88018183733562d6825ac87cb8c999adfbbd9522f42",
-      "new_sha256": "a47a7602e7561d7b766e140e91505d0d80b5424b81a90af918d4f0db99583384",
+      "new_sha256": "6f9c51ee85683e1ffe87ff623b8d07fb374e6784a1c469e0956e647c8799d660",
       "python_ast_unchanged": true
     },
     {
@@ -450,5 +450,7 @@
   ],
   "copyright_holder": "Đỗ Lê Chí Kiên and Nguyễn Trương Đăng Quang",
   "copyright_notice_changed_source_count": 66,
-  "copyright_notice_migration": "Placeholder holder 'uav-funnel-tree-gazebo contributors' replaced by the named authors in LICENSE and all source headers; comments only, no code or results changed"
+  "copyright_notice_migration": "Placeholder holder 'uav-funnel-tree-gazebo contributors' replaced by the named authors in LICENSE and all source headers; comments only, no code or results changed",
+  "asset_path_migration": "city.glb moved from assets/city.glb to data/source/city.glb. The model is a third-party CC BY 4.0 asset but also a pipeline input, so its location follows the data flow (source -> input -> expected) and its origin is recorded in ATTRIBUTION.md instead of the directory name. Only path references changed; no algorithm or numeric result.",
+  "asset_path_changed_source_count": 17
 }

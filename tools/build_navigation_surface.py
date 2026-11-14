@@ -117,8 +117,8 @@ def main():
     p.add_argument('--cell',type=float,default=.5);p.add_argument('--out',type=Path,default=root/'generated')
     args=p.parse_args()
     if args.cell<=0 or args.clearance<0 or args.vertical_clearance<0:p.error('Invalid spacing or clearance')
-    city=args.city or next((q for q in [root/'data/input/city.glb',root/'assets/city.glb'] if q.is_file()),None)
-    if city is None or not city.is_file():p.error('Use --city PATH')
+    city=args.city or root/'data/source/city.glb'
+    if not city.is_file():p.error('Use --city PATH')
     box_parts=[];low_parts=[];high_parts=[];upper=0
     for _,triangles in transformed_objects(city):
         low_parts.append(triangles.min(axis=(0,1)));high_parts.append(triangles.max(axis=(0,1)))

@@ -7,7 +7,7 @@ import trimesh
 
 from pathlib import Path
 
-CITY = Path("data/input/city.glb")
+CITY = Path("data/source/city.glb")
 OUT = Path("generated/city_topology_welded.csv")
 
 

@@ -49,9 +49,8 @@ def main(case=None):
     reverted=values[:,1:4]/scale+np.array(route['transform']['origin'])
     xz=reverted[:,:2]*[1,-1]
     navigation=json.loads((ROOT/'generated/navigation_y2p00_report.json').read_text())
-    asset=next((p for p in (ROOT/'data/input/city.glb',ROOT/'assets/city.glb')
-                if p.exists() and hashlib.sha256(p.read_bytes()).hexdigest()==navigation['sha256']),None)
-    if asset is None:
+    asset=ROOT/'data/source/city.glb'
+    if not asset.is_file() or hashlib.sha256(asset.read_bytes()).hexdigest()!=navigation['sha256']:
         raise ValueError('No matching city asset')
     parts=[]
     cutoff=min(navigation['height'],float(reverted[:,2].min()))-navigation['vertical_clearance']

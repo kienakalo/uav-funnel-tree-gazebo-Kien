@@ -37,7 +37,7 @@ def shape(link,name,kind,size,pose,color):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--mode',choices=['pose','physics'],default='pose');args=p.parse_args()
     out=ROOT/'generated';out.mkdir(exist_ok=True)
-    vertices,faces,meta=load_city(ROOT/'assets/city.glb')
+    vertices,faces,meta=load_city(ROOT/'data/source/city.glb')
     write_stl(out/'city.stl',vertices,faces)
     z=float(vertices[:,2].max())+10.
     # Explicit virtual horizontal navigation surface ABOVE city, not a conversion

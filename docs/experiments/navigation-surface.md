@@ -12,11 +12,11 @@ cd /mnt/c/DroneDemo/drone_gazebo_demo
 ```
 
 Công cụ xử lý ngoại tuyến, sử dụng NumPy và Matplotlib của môi trường phân
-tích. File `city.glb` được tìm tại `data/input` trước, rồi `assets`. Có thể
+tích. File `city.glb` được đọc tại `data/source/city.glb`. Có thể
 chỉ định rõ:
 
 ```bash
-.venv/bin/python tools/build_navigation_surface.py --height 2 --city assets/city.glb
+.venv/bin/python tools/build_navigation_surface.py --height 2 --city data/source/city.glb
 ```
 
 ## Kết quả

@@ -13,7 +13,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.collections import PolyCollection
 
-CITY = Path("data/input/city.glb")
+CITY = Path("data/source/city.glb")
 OUT = Path("generated")
 OUT.mkdir(exist_ok=True)
 

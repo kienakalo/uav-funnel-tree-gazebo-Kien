@@ -69,8 +69,8 @@ def main():
     parser.add_argument('--city',type=Path)
     parser.add_argument('--out',type=Path,default=root/'generated')
     args=parser.parse_args()
-    city=args.city or next((p for p in [root/'data/input/city.glb',root/'assets/city.glb'] if p.is_file()),None)
-    if city is None or not city.is_file():parser.error('Use --city path/to/city.glb')
+    city=args.city or root/'data/source/city.glb'
+    if not city.is_file():parser.error('Use --city path/to/city.glb')
     heights=np.arange(.5,5.51,.5);eps=1e-6
     rows=[dict(flight_height=float(h),intersect_objects=0,crossing_faces=0,coplanar_faces=0) for h in heights]
     objects=[]

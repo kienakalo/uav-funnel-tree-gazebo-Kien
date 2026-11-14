@@ -12,7 +12,7 @@ from urban_navigation import obstacle_grid,intersects_boxes
 from trajectory import Trajectory
 data=json.loads((ROOT/'generated/urban_report.json').read_text())
 route=json.loads((ROOT/'generated/route.json').read_text())
-v,f,_=load_city(ROOT/'assets/city.glb')
+v,f,_=load_city(ROOT/'data/source/city.glb')
 _,boxes,_,_=obstacle_grid(v,f,data['altitude'],data['clearance'],data['cell_size'])
 with (ROOT/'generated/physics_telemetry.csv').open() as stream:rows=list(csv.DictReader(stream))
 if not rows:raise SystemExit('No physics telemetry yet.')

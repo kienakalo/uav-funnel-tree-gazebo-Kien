@@ -11,11 +11,11 @@ cd /mnt/c/DroneDemo/drone_gazebo_demo
 .venv/bin/python tools/build_flight_slice.py --height 2
 ```
 
-Script tìm `data/input/city.glb` trước, rồi `assets/city.glb`.
+Script đọc mô hình tại `data/source/city.glb`.
 Để chỉ định rõ file:
 
 ```bash
-.venv/bin/python tools/build_flight_slice.py --height 2 --city assets/city.glb
+.venv/bin/python tools/build_flight_slice.py --height 2 --city data/source/city.glb
 ```
 
 Kết quả mới trong `generated`:

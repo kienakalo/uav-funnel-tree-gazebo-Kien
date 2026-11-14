@@ -19,6 +19,12 @@ BSD-3-Clause together with the project code.
 
 # City asset
 
+Location in this repository: `data/source/city.glb`. The asset is a pipeline
+input that the preparation scripts read to build the city STL, navigation
+surface and flight slice, so it is stored under `data/` rather than in a
+separate asset directory. Its third-party origin is recorded here and in the
+file metadata instead of being implied by the directory name.
+
 Title: Ho Chi Minh City 2025 - Thành Phố Hồ Chí Minh
 
 Author: Saigon 3D City (https://sketchfab.com/saigon3dcity)

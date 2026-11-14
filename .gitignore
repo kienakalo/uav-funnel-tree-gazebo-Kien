@@ -15,7 +15,8 @@ Thumbs.db
 /output/
 *.zip
 
-# The asset is kept once, in assets/city.glb.
+# The city asset is tracked once, at data/source/city.glb. Copies downloaded
+# into the legacy data/input location stay local.
 /data/input/city.glb
 
 # Keep a curated set of checked inputs and results. Other generated data,
