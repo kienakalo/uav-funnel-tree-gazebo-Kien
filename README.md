@@ -80,6 +80,27 @@ cache; không diễn giải các lượt nối tiếp này là phép so sánh co
 
 ## Môi trường
 
+### Thí nghiệm bổ sung cho cách dựng bề mặt
+
+`tools/run_surface_sensitivity.py` so sánh ô danh nghĩa 5, 7,5 và 15 trên
+cùng miền ngang, cùng START và điểm giao hàng. Mỗi cấu hình được dựng và
+tính Funnel trong một tiến trình riêng với cache mới, sau đó đối chiếu MMP.
+Cao độ nguồn và đích trên bề mặt có thể khác nhau giữa các cấu hình; đây
+là đánh giá ảnh hưởng của mô hình hóa, không phải hội tụ trên một lưới cố định.
+
+```powershell
+wsl.exe -d Ubuntu-24.04 --cd /mnt/c/DroneDemo/drone_gazebo_demo -- .venv/bin/python tools/run_surface_sensitivity.py
+```
+
+Kết quả nằm tại `generated/surface_sensitivity/`. Thời gian gồm ghi
+checkpoint, chỉ đo một lượt mỗi cấu hình. Peak RSS là của toàn tiến trình
+đến sau MMP, không phải bộ nhớ riêng của Funnel. Các cấu hình này chưa có
+telemetry mô phỏng bay mới. Thí nghiệm không ghi đè ba ca demo đã lưu.
+
+Hai ảnh Gazebo người dùng cung cấp được giữ nguyên trong
+`generated/paper_figures/`; thông tin nguồn và cách cắt khung khi dàn trang
+nằm trong `figure_metadata.json`.
+
 ### Các thư viện chính
 
 | Thư viện / runtime | Vai trò trong mã nguồn |

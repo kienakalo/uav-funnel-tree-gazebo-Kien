@@ -1,0 +1,72 @@
+{
+  "cell_size": 15.0,
+  "mesh": {
+    "vertices": 323,
+    "triangles": 576,
+    "edges": 898,
+    "boundary_edges": 68,
+    "nonmanifold_edges": 0,
+    "bad_boundary_vertices": 0,
+    "disconnected_vertex_fans": 0,
+    "degenerate_triangles": 0,
+    "area": 52126.30925656756
+  },
+  "source": 112,
+  "goal": 242,
+  "fixed_start": [
+    -38.7521239854311,
+    22.103391740920674,
+    7.205632472302205
+  ],
+  "delivery_goal": [
+    74.73658745332892,
+    -55.35715733632823,
+    3.988472318649292
+  ],
+  "surface_start": [
+    -38.7521239854311,
+    22.103391740920674,
+    9.266983985900879
+  ],
+  "surface_goal": [
+    74.73658745332892,
+    -55.35715733632823,
+    11.626171112060547
+  ],
+  "xy_bounds": [
+    [
+      -120.0,
+      -105.0
+    ],
+    [
+      120.0,
+      105.0
+    ]
+  ],
+  "vertical_clearance": 1.5,
+  "horizontal_half_width": 1.6,
+  "max_axis_slope": 0.5,
+  "funnel_length": 140.00751471164122,
+  "reference_length": 140.00751471164122,
+  "excess": 0.0,
+  "matches_reference": true,
+  "route_altitude_range": [
+    9.266983985900879,
+    20.037015914916992
+  ],
+  "surface_altitude_range": [
+    1.5,
+    20.037015914916992
+  ],
+  "entry_length": 2.061351513598674,
+  "descent_length": 7.637698793411255,
+  "total_geometric_mission_length": 149.70656501865116,
+  "build_seconds": 1.2991068729999142,
+  "funnel_seconds": 0.7499771219999047,
+  "source_runs": 4,
+  "propagated_tree_nodes": 2612,
+  "process_peak_rss_mib": 262.62890625,
+  "memory_scope": "Linux process high-water RSS through build, Funnel and MMP; includes imported libraries, city data, reference solver and cache; not Funnel-only memory",
+  "timing_scope": "one cold computation per cell; Funnel time includes reconstruction and checkpoint writes; no repetitions or statistical speedup claim",
+  "mesh_sha256": "f8c0cdcca029f961f1ec6fa86f6bba4fbb90d3c2df5010c712482643144642ff"
+}

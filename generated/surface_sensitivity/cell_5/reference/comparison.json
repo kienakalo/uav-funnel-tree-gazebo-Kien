@@ -1,0 +1,41 @@
+{
+  "status": "MATCHES_EXACT_REFERENCE",
+  "matches_reference": true,
+  "mesh_vertices": 2295,
+  "mesh_faces": 4400,
+  "source": 792,
+  "goal": 1810,
+  "funnel_length": 142.41872177784873,
+  "exact_reference_length": 142.41872177784873,
+  "excess_length": 0.0,
+  "excess_percent": 0.0,
+  "numerical_tolerance": 2.4241872177784874e-06,
+  "euclidean_lower_bound": 137.4042104010228,
+  "funnel_surface_membership_passed": true,
+  "reference_surface_membership_passed": true,
+  "reverse_reference_length": 142.41872177784876,
+  "rotated_reference_length": 142.4187217778487,
+  "reference_method": "Kirsanov exact MMP geodesic algorithm through pygeodesic",
+  "reference_version": "0.1.11",
+  "reference_seconds": 0.061198295999986385,
+  "reference_self_tests": [
+    {
+      "case": "flat_square",
+      "expected": 1.4142135623730951,
+      "measured": 1.4142135623730951,
+      "passed": true
+    },
+    {
+      "case": "folded_triangles",
+      "expected": 2.23606797749979,
+      "measured": 2.23606797749979,
+      "passed": true
+    }
+  ],
+  "comparison_scope": "surface segment only, identical mesh and endpoints; excludes entry and delivery descent",
+  "numerical_optimality_verified_for_this_case": true,
+  "formal_arithmetic_certificate": false,
+  "general_funnel_implementation_correctness_certified": false,
+  "mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
+  "surface_plan_sha256": "1d1bf89348b46b6e2a6add2af372b95e4037c5f4ed7aeb2a0308461e9762b653"
+}

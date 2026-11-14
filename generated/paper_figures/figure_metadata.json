@@ -1,0 +1,23 @@
+{
+  "source": "user-provided Gazebo GUI screenshots",
+  "scope": "illustrations of the city, navigation mesh, route and UAV; not a separate numerical validation run",
+  "images": {
+    "gazebo_overview.png": "acf808c2da6713f0deb80516a72628b074547d8dce91a23a749079f6f6727081",
+    "gazebo_delivery.png": "b84f54f5a86e084abff8075c87f0d98cf9bf8056d3460c3feaece213bd2eacda"
+  },
+  "latex_crop_bp": {
+    "gazebo_overview.png": [
+      4,
+      45,
+      4,
+      45
+    ],
+    "gazebo_delivery.png": [
+      4,
+      45,
+      350,
+      45
+    ]
+  },
+  "crop_note": "Original image bytes retained; crop is applied only by LaTeX includegraphics trim/clip."
+}

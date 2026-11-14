@@ -35,18 +35,18 @@
       "max_measured_speed": 4.671620945216674,
       "validation": {
         "checks_passed": true,
-        "samples": 1096,
+        "samples": 4676,
         "surface_samples": 849,
         "max_tracking_error": 0.002363301770910752,
-        "final_goal_error": 8.92354813269615e-08,
+        "final_goal_error": 1.7868149424602752e-07,
         "measured_surface_altitude_range": [
           7.680561328951408,
           16.57373564081894
         ],
         "max_vertical_surface_deviation": 0.0008566326163759186,
-        "min_sampled_city_clearance_under_body": 1.1000000882238945,
+        "min_sampled_city_clearance_under_body": 1.09999800937387,
         "route_sha256": "112723faa2a99bafaf907db309322f131bbe7f2feac858a942d716201db1e9c6",
-        "telemetry_sha256": "c01a71b4a01cac83a98581f77dc7f783b0a77267c60bd528aaeb6cebc91c5d18",
+        "telemetry_sha256": "b5312a8378659e40301d098501a45b92a6af1171822793d6ed9050081596c65a",
         "surface_mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7",
         "scope": "measured point-mass trajectory against the 3D mesh and city triangle AABBs under the body footprint"
       }

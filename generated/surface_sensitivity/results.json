@@ -1,0 +1,229 @@
+{
+  "cases": [
+    {
+      "cell_size": 5.0,
+      "mesh": {
+        "vertices": 2295,
+        "triangles": 4400,
+        "edges": 6694,
+        "boundary_edges": 188,
+        "nonmanifold_edges": 0,
+        "bad_boundary_vertices": 0,
+        "disconnected_vertex_fans": 0,
+        "degenerate_triangles": 0,
+        "area": 52782.16744244355
+      },
+      "source": 792,
+      "goal": 1810,
+      "fixed_start": [
+        -38.7521239854311,
+        22.103391740920674,
+        7.205632472302205
+      ],
+      "delivery_goal": [
+        74.73658745332892,
+        -55.35715733632823,
+        3.988472318649292
+      ],
+      "surface_start": [
+        -38.7521239854311,
+        22.103391740920674,
+        8.643045978616428
+      ],
+      "surface_goal": [
+        74.73658745332892,
+        -55.35715733632823,
+        8.947592443896433
+      ],
+      "xy_bounds": [
+        [
+          -120.0,
+          -105.0
+        ],
+        [
+          120.0,
+          105.0
+        ]
+      ],
+      "vertical_clearance": 1.5,
+      "horizontal_half_width": 1.6,
+      "max_axis_slope": 0.5,
+      "funnel_length": 142.41872177784873,
+      "reference_length": 142.41872177784873,
+      "excess": 0.0,
+      "matches_reference": true,
+      "route_altitude_range": [
+        7.6804625604619225,
+        16.574313163757324
+      ],
+      "surface_altitude_range": [
+        1.5,
+        20.037015914916992
+      ],
+      "entry_length": 1.4374135063142228,
+      "descent_length": 4.959120125247141,
+      "total_geometric_mission_length": 148.8152554094101,
+      "build_seconds": 2.3149140449999948,
+      "funnel_seconds": 308.96357529700003,
+      "source_runs": 49,
+      "propagated_tree_nodes": 224682,
+      "process_peak_rss_mib": 512.6875,
+      "memory_scope": "Linux process high-water RSS through build, Funnel and MMP; includes imported libraries, city data, reference solver and cache; not Funnel-only memory",
+      "timing_scope": "one cold computation per cell; Funnel time includes reconstruction and checkpoint writes; no repetitions or statistical speedup claim",
+      "mesh_sha256": "d7e0117924c63ffc63910a66677194fc42d9f1638ae6bfde87eb899bcb332bc7"
+    },
+    {
+      "cell_size": 7.5,
+      "mesh": {
+        "vertices": 1085,
+        "triangles": 2040,
+        "edges": 3124,
+        "boundary_edges": 128,
+        "nonmanifold_edges": 0,
+        "bad_boundary_vertices": 0,
+        "disconnected_vertex_fans": 0,
+        "degenerate_triangles": 0,
+        "area": 52567.42935797692
+      },
+      "source": 359,
+      "goal": 844,
+      "fixed_start": [
+        -38.7521239854311,
+        22.103391740920674,
+        7.205632472302205
+      ],
+      "delivery_goal": [
+        74.73658745332892,
+        -55.35715733632823,
+        3.988472318649292
+      ],
+      "surface_start": [
+        -38.7521239854311,
+        22.103391740920674,
+        9.068679856361216
+      ],
+      "surface_goal": [
+        74.73658745332892,
+        -55.35715733632823,
+        10.197592443896433
+      ],
+      "xy_bounds": [
+        [
+          -120.0,
+          -105.0
+        ],
+        [
+          120.0,
+          105.0
+        ]
+      ],
+      "vertical_clearance": 1.5,
+      "horizontal_half_width": 1.6,
+      "max_axis_slope": 0.5,
+      "funnel_length": 142.065979639373,
+      "reference_length": 142.065979639373,
+      "excess": 0.0,
+      "matches_reference": true,
+      "route_altitude_range": [
+        8.057884693145752,
+        17.61025298893707
+      ],
+      "surface_altitude_range": [
+        1.5,
+        20.037015914916992
+      ],
+      "entry_length": 1.8630473840590112,
+      "descent_length": 6.209120125247141,
+      "total_geometric_mission_length": 150.13814714867917,
+      "build_seconds": 2.5180802250000056,
+      "funnel_seconds": 43.50014692899998,
+      "source_runs": 23,
+      "propagated_tree_nodes": 50004,
+      "process_peak_rss_mib": 268.984375,
+      "memory_scope": "Linux process high-water RSS through build, Funnel and MMP; includes imported libraries, city data, reference solver and cache; not Funnel-only memory",
+      "timing_scope": "one cold computation per cell; Funnel time includes reconstruction and checkpoint writes; no repetitions or statistical speedup claim",
+      "mesh_sha256": "1154fe89a02858c67c499b444b4a837f2b21ab59d4987150ed6773390a336021"
+    },
+    {
+      "cell_size": 15.0,
+      "mesh": {
+        "vertices": 323,
+        "triangles": 576,
+        "edges": 898,
+        "boundary_edges": 68,
+        "nonmanifold_edges": 0,
+        "bad_boundary_vertices": 0,
+        "disconnected_vertex_fans": 0,
+        "degenerate_triangles": 0,
+        "area": 52126.30925656756
+      },
+      "source": 112,
+      "goal": 242,
+      "fixed_start": [
+        -38.7521239854311,
+        22.103391740920674,
+        7.205632472302205
+      ],
+      "delivery_goal": [
+        74.73658745332892,
+        -55.35715733632823,
+        3.988472318649292
+      ],
+      "surface_start": [
+        -38.7521239854311,
+        22.103391740920674,
+        9.266983985900879
+      ],
+      "surface_goal": [
+        74.73658745332892,
+        -55.35715733632823,
+        11.626171112060547
+      ],
+      "xy_bounds": [
+        [
+          -120.0,
+          -105.0
+        ],
+        [
+          120.0,
+          105.0
+        ]
+      ],
+      "vertical_clearance": 1.5,
+      "horizontal_half_width": 1.6,
+      "max_axis_slope": 0.5,
+      "funnel_length": 140.00751471164122,
+      "reference_length": 140.00751471164122,
+      "excess": 0.0,
+      "matches_reference": true,
+      "route_altitude_range": [
+        9.266983985900879,
+        20.037015914916992
+      ],
+      "surface_altitude_range": [
+        1.5,
+        20.037015914916992
+      ],
+      "entry_length": 2.061351513598674,
+      "descent_length": 7.637698793411255,
+      "total_geometric_mission_length": 149.70656501865116,
+      "build_seconds": 1.2991068729999142,
+      "funnel_seconds": 0.7499771219999047,
+      "source_runs": 4,
+      "propagated_tree_nodes": 2612,
+      "process_peak_rss_mib": 262.62890625,
+      "memory_scope": "Linux process high-water RSS through build, Funnel and MMP; includes imported libraries, city data, reference solver and cache; not Funnel-only memory",
+      "timing_scope": "one cold computation per cell; Funnel time includes reconstruction and checkpoint writes; no repetitions or statistical speedup claim",
+      "mesh_sha256": "f8c0cdcca029f961f1ec6fa86f6bba4fbb90d3c2df5010c712482643144642ff"
+    }
+  ],
+  "all_match_reference": true,
+  "scope": "cell-size sensitivity on conservative height envelopes; fixed city, XY domain, physical START and delivery point; geodesic endpoint Z changes with each envelope; different meshes are different optimization domains",
+  "environment": {
+    "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  12\nOn-line CPU(s) list:                     0-11\nVendor ID:                               AuthenticAMD\nModel name:                              AMD Ryzen 5 5600H with Radeon Graphics\nCPU family:                              25\nModel:                                   80\nThread(s) per core:                      2\nCore(s) per socket:                      6\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                6587.45\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm\nVirtualization:                          AMD-V\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               192 KiB (6 instances)\nL1i cache:                               192 KiB (6 instances)\nL2 cache:                                3 MiB (6 instances)\nL3 cache:                                16 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-11\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Vulnerable: No microcode\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+    "memory": "               total        used        free      shared  buff/cache   available\nMem:      8001437696  1301151744  4977455104    48119808  1928830976  6700285952\nSwap:     2147483648           0  2147483648\n"
+  },
+  "timing_conditions": "Background GUI/render workloads were not controlled. Single-pass wall times include checkpoint writes and are observational, not an isolated algorithm-only benchmark."
+}

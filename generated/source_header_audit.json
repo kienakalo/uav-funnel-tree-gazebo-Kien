@@ -1,6 +1,6 @@
 {
   "scope": "all first-party Python files at repository root, src, tools, tests; scripts/*.sh; excludes generated outputs, environments and third-party assets",
-  "source_file_count": 66,
+  "source_file_count": 67,
   "changed_source_count": 56,
   "python_ast_preserved": true,
   "algorithm_or_simulation_rerun": false,
@@ -401,6 +401,13 @@
       "old_sha256": "bc42a991537d71f43ae1cd41c65655fe0eeca0b70c2e40fb4f37e5fd73ef4474",
       "new_sha256": "1b8796881bee7a5b9cd83a8f3d646e59a2c6be33902dcae1b4fed5f8b8282a6c",
       "python_ast_unchanged": false
+    },
+    {
+      "path": "tools/run_surface_sensitivity.py",
+      "old_sha256": null,
+      "new_sha256": "fb6a41bda922ede03d351cb30269a775d4f0f155ee07182671e33e8c977af431",
+      "python_ast_unchanged": null,
+      "added_after_initial_comment_only_audit": true
     }
   ],
   "metadata_updated": [
@@ -447,5 +454,6 @@
     "generated/funnel_physics/surface_delivery/telemetry_metadata.json",
     "generated/funnel_reference/reference_comparison.json",
     "generated/funnel_surface_reference/comparison.json"
-  ]
+  ],
+  "supplement_note": "The added sensitivity experiment is new executable code, not part of the initial comment-only migration."
 }
