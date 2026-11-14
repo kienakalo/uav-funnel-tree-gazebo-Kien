@@ -1,3 +1,5 @@
+# Main libraries: NumPy (geometry arrays); json, struct, pathlib (Python stdlib).
+# This GLB reader does not require trimesh; older survey tools use it separately.
 """Load this GLB's uncompressed triangle primitives and bake scene transforms."""
 import json
 import struct

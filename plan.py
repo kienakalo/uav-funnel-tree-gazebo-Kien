@@ -1,3 +1,7 @@
+# Main libraries: Python standard library; NumPy (via src/funnel_tree.py).
+# City/Gazebo workflow: Shapely, Matplotlib, Gazebo Sim 8 / gz.math7;
+# independent MMP reference: pygeodesic (not used by the Funnel planner).
+# Versions and module roles: README.md, requirements*.txt.
 """Run experimental Funnel Tree on the bundled geom meshes."""
 import argparse,json,sys
 from pathlib import Path

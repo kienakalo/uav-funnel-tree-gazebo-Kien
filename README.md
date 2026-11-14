@@ -80,6 +80,23 @@ cache; không diễn giải các lượt nối tiếp này là phép so sánh co
 
 ## Môi trường
 
+### Các thư viện chính
+
+| Thư viện / runtime | Vai trò trong mã nguồn |
+| --- | --- |
+| NumPy | Mảng tọa độ, tính toán hình học và phép toán tuyến tính trong Funnel Tree, đọc GLB và xử lý telemetry |
+| Shapely | Truy vấn không gian, kiểm tra footprint và cột hạ, dựng bề mặt dẫn đường |
+| Matplotlib | Biểu đồ tuyến, cao độ và kết quả thực nghiệm |
+| Gazebo Harmonic: `gz.sim8`, `gz.math7` | Mô phỏng vật lý, đọc trạng thái và tác dụng lực lên UAV |
+| pygeodesic | Bộ giải MMP độc lập để đối chiếu; không thay thế Funnel Tree khi lập tuyến |
+| Thư viện chuẩn Python | `math`, `json`, `csv`, `pathlib`, `hashlib`, `heapq`, `argparse`, `xml.etree.ElementTree` và các tiện ích hệ thống |
+| trimesh | Công cụ khảo sát cũ trong `tools/dev/`, không bắt buộc cho lệnh chạy demo hiện tại |
+
+Các file chạy demo, điều khiển và phân tích ghi thư viện chính ở phần đầu
+mã nguồn. `requirements-demo.txt` và `requirements-reference.txt` lưu các
+phiên bản đã dùng; một thư viện có trong bộ cài không đồng nghĩa mọi module
+đều sử dụng nó. Gazebo dùng Python bindings cài qua hệ thống Ubuntu.
+
 - Ubuntu 24.04, hoặc Ubuntu 24.04 trên WSL2 với WSLg để mở giao diện.
 - Gazebo Harmonic / Gazebo Sim 8 và Python bindings của hệ thống.
 - Python 3.12. Các phiên bản thư viện đã dùng nằm trong `requirements-demo.txt`.

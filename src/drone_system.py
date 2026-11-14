@@ -1,3 +1,5 @@
+# Main libraries: Gazebo Harmonic Python bindings (gz.sim8, gz.math7);
+# csv, json, math, pathlib (Python stdlib); trajectory (local project module).
 """V2: smooth reference, velocity/acceleration feedforward and position feedback.
 
 Point-mass model with world force at COM; not a rotor/autopilot simulation.

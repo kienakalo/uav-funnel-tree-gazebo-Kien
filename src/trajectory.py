@@ -1,3 +1,5 @@
+# Main libraries: math (Python standard library).
+# Quintic time parameterization and feedforward + PD are implemented locally.
 """Time parameterization on the existing polyline; does not change path planning."""
 import math
 

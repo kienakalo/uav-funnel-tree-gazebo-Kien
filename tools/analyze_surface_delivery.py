@@ -1,3 +1,5 @@
+# Main libraries: NumPy (telemetry/mesh arrays), Shapely (spatial queries),
+# Matplotlib (plots); csv, hashlib, json, pathlib (Python standard library).
 """Check measured tracking against the actual non-flat navigation mesh."""
 import csv
 import hashlib

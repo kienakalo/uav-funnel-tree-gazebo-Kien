@@ -1,3 +1,6 @@
+# Main libraries: NumPy; pygeodesic (independent exact MMP reference only);
+# hashlib, importlib.metadata, json, math, pathlib, time (Python stdlib).
+# Funnel candidates are computed separately by the local Funnel Tree code.
 """Compare the saved 3D Funnel path with an independent exact MMP solver."""
 import hashlib
 import importlib.metadata

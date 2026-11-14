@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Main runtime: Bash, Python + NumPy/Shapely, Gazebo Harmonic (gz.sim8/gz.math7).
+# Analysis uses Matplotlib; MMP verification uses pygeodesic independently.
+# Python dependency versions: requirements-demo.txt and requirements-reference.txt.
 # WSLg D3D12 rendering. Change FUNNEL_DEMO_CASE to select another mission.
 set -euo pipefail
 cd "$(dirname "$0")/.."
